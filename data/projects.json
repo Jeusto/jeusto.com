@@ -1,185 +1,222 @@
-[{
-  "_id": {
-    "$oid": "60e4ab43d8ae072cecb1d2e3"
+[
+  {
+    "_id": {
+      "$oid": "60e4ab43d8ae072cecb1d2e3"
+    },
+    "image": "https://i.imgur.com/TV77Nup.jpeg",
+    "icon": "https://i.imgur.com/TV77Nup.jpeg",
+    "title": "Trivia ten",
+    "description": "Multiplayer quiz web application with rooms to play with your friends. Real-time games, with a choice of more than 20 categories of questions and over 4000 questions.",
+    "repoLink": "https://github.com/Jeusto/trivia-ten",
+    "demoLink": "http://triviaten.jeusto.com/",
+    "tags": [
+      "Javascript",
+      "Socket.io",
+      "Express"
+    ],
+    "order": 44,
+    "isSecondary": false,
+    "descriptionFr": "Application web de quiz multijoueur avec des salons pour jouer avec ses amis. Parties en temps réel, avec un choix parmi plus de 20 catégories de questions et plus de 4000 questions."
   },
-  "image": "https://i.imgur.com/TV77Nup.jpeg",
-  "title": "Trivia ten",
-  "description": "Multiplayer quiz web application with rooms to play with your friends. Real-time games, with a choice of more than 20 categories of questions and over 4000 questions.",
-  "repoLink": "https://github.com/Jeusto/trivia-ten",
-  "demoLink": "http://triviaten.jeusto.com/",
-  "tags": [
-    "Javascript",
-    "Socket.io",
-    "Express"
-  ],
-  "order": 44,
-  "descriptionFr": "Application web de quiz multijoueur avec des salons pour jouer avec ses amis. Parties en temps réel, avec un choix parmi plus de 20 catégories de questions et plus de 4000 questions."
-},{
-  "_id": {
-    "$oid": "60e4ab53d8ae072cecb1d2e4"
+  {
+    "_id": {
+      "$oid": "60e4ab53d8ae072cecb1d2e4"
+    },
+    "image": "https://i.imgur.com/2WSZ8YH.jpeg",
+    "icon": "https://i.imgur.com/eAdZR1B.png",
+    "title": "Fresh & flesh",
+    "description": "A recipe sharing website with a backend and a database that includes several features like language selection, uploading content via a form, bookmarking etc.",
+    "repoLink": "https://github.com/Jeusto/zombie-recipes",
+    "demoLink": "https://freshflesh.000webhostapp.com/",
+    "tags": [
+      "Php",
+      "Sqlite",
+      "Sass"
+    ],
+    "order": 66,
+    "isSecondary": true,
+    "descriptionFr": "Site web de partage de recettes avec un backend et une base de données qui comprend plusieurs fonctionnalités comme le choix de langue, mise en ligne de contenu via un formulaire, mettre en favoris etc."
   },
-  "image": "https://i.imgur.com/2WSZ8YH.jpeg",
-  "title": "Fresh & flesh",
-  "description": "A recipe sharing website with a backend and a database that includes several features like language selection, uploading content via a form, bookmarking etc.",
-  "repoLink": "https://github.com/Jeusto/zombie-recipes",
-  "demoLink": "https://freshflesh.000webhostapp.com/",
-  "tags": [
-    "Php",
-    "Sqlite",
-    "Sass"
-  ],
-  "order": 66,
-  "descriptionFr": "Site web de partage de recettes avec un backend et une base de données qui comprend plusieurs fonctionnalités comme le choix de langue, mise en ligne de contenu via un formulaire, mettre en favoris etc."
-},{
-  "_id": {
-    "$oid": "60e4abddd8ae072cecb1d2e6"
+  {
+    "_id": {
+      "$oid": "60e4abddd8ae072cecb1d2e6"
+    },
+    "image": "https://i.imgur.com/9MoAHMt.jpeg",
+    "icon": "https://i.imgur.com/9MoAHMt.jpeg",
+    "title": "Daily wallpapers",
+    "description": "A simple website to navigate through all the top wallpapers posted on Reddit every day.",
+    "repoLink": "https://github.com/Jeusto/daily-wallpapers",
+    "demoLink": "https://dailywallpapers.jeusto.com/",
+    "tags": [
+      "React",
+      "Styled components"
+    ],
+    "order": 88,
+    "isSecondary": false,
+    "descriptionFr": "Un simple site web pour parcourir les meilleurs fonds d'écran postés sur le réseau social Reddit chaque jour.site web pour visualiser les meilleurs fonds d'écran postés sur Reddit chaque jour."
   },
-  "image": "https://i.imgur.com/9MoAHMt.jpeg",
-  "title": "Daily wallpapers",
-  "description": "A simple website to navigate through all the top wallpapers posted on Reddit every day.",
-  "repoLink": "https://github.com/Jeusto/daily-wallpapers",
-  "demoLink": "https://dailywallpapers.jeusto.com/",
-  "tags": [
-    "React",
-    "Styled components"
-  ],
-  "order": 88,
-  "descriptionFr": "Un simple Un simple site web pour parcourir les meilleurs fonds d'écran postés sur le réseau social Reddit chaque jour.site web pour visualiser les meilleurs fonds d'écran postés sur Reddit chaque jour."
-},{
-  "_id": {
-    "$oid": "60e4abf9d8ae072cecb1d2e8"
+  {
+    "_id": {
+      "$oid": "60e4abf9d8ae072cecb1d2e8"
+    },
+    "image": "https://i.imgur.com/UJZtrF8.jpeg",
+    "icon": "https://i.imgur.com/u3fR9Ru.png",
+    "title": "Tomotasks",
+    "description": "A productivity web app combining a countdown and a task list to use the Pomodoro technique.",
+    "repoLink": "https://github.com/Jeusto/tomotasks",
+    "demoLink": "https://tomotasks.jeusto.com/",
+    "tags": [
+      "React"
+    ],
+    "order": 99,
+    "isSecondary": true,
+    "descriptionFr": "Une application web de productivité combinant un compte à rebours et une liste de tâches pour utiliser la technique Pomodoro."
   },
-  "image": "https://i.imgur.com/UJZtrF8.jpeg",
-  "title": "Tomotasks",
-  "description": "A productivity web app combining a countdown and a task list to use the Pomodoro technique.",
-  "repoLink": "https://github.com/Jeusto/tomotasks",
-  "demoLink": "https://tomotasks.jeusto.com/",
-  "tags": [
-    "React"
-  ],
-  "order": 99,
-  "descriptionFr": "Une application web de productivité combinant un compte à rebours et une liste de tâches pour utiliser la technique Pomodoro."
-},{
-  "_id": {
-    "$oid": "60e4ac09d8ae072cecb1d2e9"
+  {
+    "_id": {
+      "$oid": "60e4ac09d8ae072cecb1d2e9"
+    },
+    "image": "https://i.imgur.com/EF1T5zS.jpeg",
+    "icon": "https://i.imgur.com/wfSpj0S.png",
+    "title": "This website",
+    "description": "First version of this website which can be used as a template.",
+    "repoLink": "https://github.com/Jeusto/personal-website-v1",
+    "demoLink": "https://jeusto.com/",
+    "tags": [
+      "Typescript",
+      "MongoDB",
+      "Next.js",
+      "Chakra UI"
+    ],
+    "order": 110,
+    "isSecondary": true,
+    "descriptionFr": "Première version de ce site web qui peut être utilise comme modèle."
   },
-  "image": "https://i.imgur.com/EF1T5zS.jpeg",
-  "title": "This website",
-  "description": "First version of this website which can be used as a template.",
-  "repoLink": "https://github.com/Jeusto/personal-website-v1",
-  "demoLink": "https://jeusto.com/",
-  "tags": [
-    "Typescript",
-    "MongoDB",
-    "Next.js",
-    "Chakra UI"
-  ],
-  "order": 110,
-  "descriptionFr": "Première version de ce site web qui peut être utilise comme modèle."
-},{
-  "_id": {
-    "$oid": "60e4ac40d8ae072cecb1d2ea"
+  {
+    "_id": {
+      "$oid": "60e4ac40d8ae072cecb1d2ea"
+    },
+    "image": "https://i.imgur.com/ds28JNq.jpeg",
+    "icon": "https://i.imgur.com/CpycCrT.png",
+    "title": "Streamer is live",
+    "description": "A Chrome extension to quickly check the status of your favorite twitch streamers and get an alert when they go live. (currently outdated)",
+    "repoLink": "https://github.com/Jeusto/streamer-is-live",
+    "demoLink": "https://chrome.google.com/webstore/detail/streamer-is-live/cmhcjajgcgahcpnpdakafbdblkjgodgl?hl=en&authuser=0",
+    "tags": [
+      "Javascript",
+      "Sass"
+    ],
+    "order": 77,
+    "isSecondary": true,
+    "descriptionFr": "Une extension Chrome pour rapidement vérifier si vos streamers Twitch préférés sont en ligne et obtenir une alerte lorsqu'ils commencent une diffusion. (actuellement obsolète)"
   },
-  "image": "https://i.imgur.com/ds28JNq.jpeg",
-  "title": "Streamer is live",
-  "description": "A Chrome extension to quickly check the status of your favorite twitch streamers and get an alert when they go live. (currently outdated)",
-  "repoLink": "https://github.com/Jeusto/streamer-is-live",
-  "demoLink": "https://chrome.google.com/webstore/detail/streamer-is-live/cmhcjajgcgahcpnpdakafbdblkjgodgl?hl=en&authuser=0",
-  "tags": [
-    "Javascript",
-    "Sass"
-  ],
-  "order": 77,
-  "descriptionFr": "Une extension Chrome pour rapidement vérifier si vos streamers Twitch préférés sont en ligne et obtenir une alerte lorsqu'ils commencent une diffusion. (actuellement obsolète)"
-},{
-  "_id": {
-    "$oid": "60e4ac4cd8ae072cecb1d2eb"
+  {
+    "_id": {
+      "$oid": "60e4ac4cd8ae072cecb1d2eb"
+    },
+    "image": "https://i.imgur.com/OSwRuZz.jpeg",
+    "icon": "https://i.imgur.com/rjwVGhy.png",
+    "title": "Game of life",
+    "description": "John Conway's game of life made with React. Create an initial configuration and observe how it evolves.",
+    "repoLink": "https://github.com/Jeusto/game-of-life",
+    "demoLink": "https://gameoflife.jeusto.com/",
+    "tags": [
+      "React"
+    ],
+    "order": 120,
+    "isSecondary": true,
+    "descriptionFr": "Le jeu de la vie de John Conway réalisé avec React. Créez une configuration initiale et observez son évolution."
   },
-  "image": "https://i.imgur.com/OSwRuZz.jpeg",
-  "title": "Game of life",
-  "description": "John Conway's game of life made with React. Create an initial configuration and observe how it evolves.",
-  "repoLink": "https://github.com/Jeusto/game-of-life",
-  "demoLink": "https://gameoflife.jeusto.com/",
-  "tags": [
-    "React"
-  ],
-  "order": 120,
-  "descriptionFr": "Le jeu de la vie de John Conway réalisé avec React. Créez une configuration initiale et observez son évolution."
-},{
-  "_id": {
-    "$oid": "60f148975d1c7c14a757a7c6"
+  {
+    "_id": {
+      "$oid": "60f148975d1c7c14a757a7c6"
+    },
+    "image": "https://i.imgur.com/q3PDo4X.jpeg",
+    "icon": "https://i.imgur.com/q3PDo4X.jpeg",
+    "title": "Warm Up",
+    "description": "An extension for the code editor Vscode to practice and improve your typing speed right inside your code editor. Downloaded and used  by 3000+ developers.",
+    "repoLink": "https://github.com/Jeusto/vscode-typing-test",
+    "demoLink": "https://warmup.jeusto.com/",
+    "tags": [
+      "Typescript",
+      "Vscode extension"
+    ],
+    "order": 10,
+    "isSecondary": false,
+    "descriptionFr": "Extension pour l’éditeur de code Vscode qui permet de s'entraîner d'améliorer sa vitesse de frappe directement dans l'éditeur de code. Téléchargé et utilisé par plusieurs milliers de développeurs dans le monde."
   },
-  "image": "https://i.imgur.com/q3PDo4X.jpeg",
-  "title": "Warm Up",
-  "description": "An extension for the code editor Vscode to practice and improve your typing speed right inside your code editor. Downloaded and used  by 3000+ developers.",
-  "repoLink": "https://github.com/Jeusto/vscode-typing-test",
-  "demoLink": "https://warmup.jeusto.com/",
-  "tags": [
-    "Typescript",
-    "Vscode extension"
-  ],
-  "order": 10,
-  "descriptionFr": "Extension pour l’éditeur de code Vscode qui permet de s'entraîner d'améliorer sa vitesse de frappe directement dans l'éditeur de code. Téléchargé et utilisé par plusieurs milliers de développeurs dans le monde."
-},{
-  "_id": {
-    "$oid": "61035dd72a7f6e84f695c3ce"
+  {
+    "_id": {
+      "$oid": "61035dd72a7f6e84f695c3ce"
+    },
+    "image": "https://i.imgur.com/rN9H5UC.jpeg",
+    "icon": "https://i.imgur.com/qmGdGD4.png",
+    "title": "One Sandbox",
+    "description": "A dark theme for Visual Studio Code inspired by the online code editor \"Codesandbox\" and based on the \"One Dark Pro\" theme.",
+    "repoLink": "https://github.com/Jeusto/one-sandbox-theme",
+    "demoLink": "https://marketplace.visualstudio.com/items?itemName=Jeusto.one-sandbox",
+    "tags": [
+      "Vscode extension"
+    ],
+    "order": 100,
+    "isSecondary": true,
+    "descriptionFr": "Un thème sombre pour Visual Studio Code inspiré par l'éditeur de code en ligne \"Codesandbox\" et basé sur le thème \"One Dark Pro\"."
   },
-  "image": "https://i.imgur.com/rN9H5UC.jpeg",
-  "title": "One Sandbox",
-  "description": "A dark theme for Visual Studio Code inspired by the online code editor \"Codesandbox\" and based on the \"One Dark Pro\" theme.",
-  "repoLink": "https://github.com/Jeusto/one-sandbox-theme",
-  "demoLink": "https://marketplace.visualstudio.com/items?itemName=Jeusto.one-sandbox",
-  "tags": [
-    "Vscode extension"
-  ],
-  "order": 100,
-  "descriptionFr": "Un thème sombre pour Visual Studio Code inspiré par l'éditeur de code en ligne \"Codesandbox\" et basé sur le thème \"One Dark Pro\"."
-},{
-  "_id": {
-    "$oid": "612df42170a95a95c4f4caf8"
+  {
+    "_id": {
+      "$oid": "612df42170a95a95c4f4caf8"
+    },
+    "image": "https://i.imgur.com/xwcKtrs.png",
+    "icon": "https://i.imgur.com/xwcKtrs.png",
+    "title": "1pt.one",
+    "description": "A minimalistic website to shorten website URLs and keep track of the number of visits. There's also a documented and free to use API.",
+    "repoLink": "https://github.com/Jeusto/1pt.one",
+    "demoLink": "http://1pt.one/",
+    "tags": [
+      "Python",
+      "Flask",
+      "MongoDB"
+    ],
+    "order": 22,
+    "isSecondary": false,
+    "descriptionFr": "Site minimaliste pour raccourcir des URLs de sites web et suivre le nombre de visites. Il y a également une API documentée et gratuit d'utilisation."
   },
-  "image": "https://i.imgur.com/xwcKtrs.png",
-  "title": "1pt.one",
-  "description": "A minimalistic website to shorten website URLs and keep track of the number of visits. There's also a documented and free to use API.",
-  "repoLink": "https://github.com/Jeusto/1pt.one",
-  "demoLink": "http://1pt.one/",
-  "tags": [
-    "Python",
-    "Flask",
-    "MongoDB"
-  ],
-  "order": 22,
-  "descriptionFr": "Site minimaliste pour raccourcir des URLs de sites web et suivre le nombre de visites. Il y a également une API documentée et gratuit d'utilisation."
-},{
-  "_id": {
-    "$oid": "6147c6a5892888443a7e57cc"
+  {
+    "_id": {
+      "$oid": "6147c6a5892888443a7e57cc"
+    },
+    "image": "https://i.imgur.com/Z2qIjKS.jpeg",
+    "icon": "https://i.imgur.com/Z2qIjKS.jpeg",
+    "title": "Twitter's opinion",
+    "description": "A tool to visualize the average sentiment of Twitter users about a specific subject using a natural language processing library.",
+    "repoLink": "https://github.com/Jeusto/twitter-opinion-frontend",
+    "demoLink": "https://twitteropinion.jeusto.com",
+    "tags": [
+      "Next.js",
+      "Python",
+      "Flask",
+      "Chakra UI"
+    ],
+    "order": 51,
+    "isSecondary": false,
+    "descriptionFr": "Outil pour visualiser le sentiment global des utilisateurs de Twitter à propos d’un sujet particulier grâce à une librairie d'intelligence artificelle."
   },
-  "image": "https://i.imgur.com/Z2qIjKS.jpeg",
-  "title": "Twitter's opinion",
-  "description": "A tool to visualize the average sentiment of Twitter users about a specific subject using a natural language processing library.",
-  "repoLink": "https://github.com/Jeusto/twitter-opinion-frontend",
-  "demoLink": "https://twitteropinion.jeusto.com",
-  "tags": [
-    "Next.js",
-    "Python",
-    "Flask",
-    "Chakra UI"
-  ],
-  "order": 51,
-  "descriptionFr": "Outil pour visualiser le sentiment global des utilisateurs de Twitter à propos d’un sujet particulier grâce à une librairie d'intelligence artificelle."
-},{
-  "_id": {
-    "$oid": "61f82e8a5fe3f23e44fc2631"
-  },
-  "image": "https://i.imgur.com/ozAdO8X.jpg",
-  "title": "Candle",
-  "description": "Crossplatform desktop application to download and read books, annotate, take notes etc.",
-  "repoLink": "https://github.com/Jeusto/book-reader-java-project",
-  "demoLink": "",
-  "tags": [
-    "Java",
-    "Java swing"
-  ],
-  "order": 40,
-  "descriptionFr": "Application de bureau multi-plateformes qui permet de télécharger et lire des livres, annoter, prendre des notes etc."
-}]
+  {
+    "_id": {
+      "$oid": "61f82e8a5fe3f23e44fc2631"
+    },
+    "image": "https://i.imgur.com/ozAdO8X.jpg",
+    "icon": "https://i.imgur.com/ozAdO8X.jpg",
+    "title": "Candle",
+    "description": "Crossplatform desktop application to download and read books, annotate, take notes etc.",
+    "repoLink": "https://github.com/Jeusto/book-reader-java-project",
+    "demoLink": "",
+    "tags": [
+      "Java",
+      "Java swing"
+    ],
+    "order": 40,
+    "isSecondary": false,
+    "descriptionFr": "Application de bureau multi-plateformes qui permet de télécharger et lire des livres, annoter, prendre des notes etc."
+  }
+]
