@@ -13,14 +13,11 @@ export default function Custom404() {
             margin="auto"
             textAlign="center"
             as="h1"
-            fontSize="display"
           >
             404. Page not found.
           </Heading>
           <NextLink href="/" passHref>
-            <Button variant="ghost" fontSize="20px" size="lg">
-              Go home
-            </Button>
+            <Button>Go home</Button>
           </NextLink>
         </VStack>
       </SlideWhenVisible>
