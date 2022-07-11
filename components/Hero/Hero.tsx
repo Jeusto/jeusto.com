@@ -1,59 +1,58 @@
-import { Box, Heading, Text, Flex } from "@chakra-ui/react";
 import {
-  FiGithub,
-  FiTwitter,
-  FiMail,
-  FiLinkedin,
-  FiLink,
-} from "react-icons/fi";
+  Box,
+  Heading,
+  Text,
+  Button,
+  Link,
+  HStack,
+  useColorModeValue,
+} from "@chakra-ui/react";
+import { FiGithub, FiMail, FiLinkedin } from "react-icons/fi";
 import SlideWhenVisible from "../../hooks/SlideWhenVisible";
-import CustomLink from "./CustomLink";
 import useTranslation from "next-translate/useTranslation";
 
 export default function Landing() {
   const { t } = useTranslation("common");
 
   return (
-    <Box mt="10rem">
+    <Box>
       <SlideWhenVisible threshold="0.11">
-        <Heading className="gradient_heading" fontSize="display">
+        <Heading
+          className={useColorModeValue(
+            "gradient_heading",
+            "gradient_heading_dark"
+          )}
+          as="h1"
+          size="2xl"
+        >
           {t("hero_name")}
-        </Heading>
-      </SlideWhenVisible>
-      <SlideWhenVisible threshold="0.11">
-        <Heading className="gradient_heading" as="h1" fontSize="display">
+          <br />
           {t("hero_role")}
         </Heading>
       </SlideWhenVisible>
       <SlideWhenVisible threshold="0.11">
-        <Box fontSize="display3" mt="2rem">
-          <Text>{t("hero_text1")}</Text>
-          <Text>{t("hero_text2")}</Text>
+        <Box w="90%">
+          <Text mt="1rem">{t("about_text1")}</Text>
         </Box>
       </SlideWhenVisible>
       <SlideWhenVisible threshold="0.11">
-        <Flex ml="-1.5" flexWrap="wrap" mt="1rem">
-          <CustomLink
-            url="mailto:arhunsad@gmail.com"
-            name="Email"
-            icon={FiMail}
-          ></CustomLink>
-          <CustomLink
-            url="https://github.com/Jeusto"
-            name="Github"
-            icon={FiGithub}
-          ></CustomLink>
-          <CustomLink
-            url={t("hero_linkedinLink")}
-            name="LinkedIn"
-            icon={FiLinkedin}
-          ></CustomLink>
-          <CustomLink
-            url="https://linktr.ee/Jeusto"
-            name={t("hero_otherLinks")}
-            icon={FiLink}
-          ></CustomLink>
-        </Flex>
+        <HStack ml="-1.5" flexWrap="wrap">
+          <Link m="1.5" href={"mailto:arhunsad@gmail.com"} isExternal>
+            <Button variant="ghost" leftIcon={<FiMail size={"1.4rem"} />}>
+              Email
+            </Button>
+          </Link>
+          <Link m="1.5" href={"https://github.com/Jeusto/"} isExternal>
+            <Button variant="ghost" leftIcon={<FiGithub size={"1.4rem"} />}>
+              Github
+            </Button>
+          </Link>
+          <Link m="1.5" href={t("hero_linkedinLink")} isExternal>
+            <Button variant="ghost" leftIcon={<FiLinkedin size={"1.4rem"} />}>
+              Linkedin
+            </Button>
+          </Link>
+        </HStack>
       </SlideWhenVisible>
     </Box>
   );

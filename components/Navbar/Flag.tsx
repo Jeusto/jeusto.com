@@ -6,6 +6,7 @@ import frFlag from "/public/fr.svg";
 
 export default function CustomLink() {
   const { t, lang } = useTranslation("common");
+
   return (
     <Tooltip
       label={
@@ -13,9 +14,8 @@ export default function CustomLink() {
           ? "Switch the website to french"
           : "Passer le site en anglais"
       }
-      fontSize="display3"
     >
-      <Box pt="0.3rem" cursor="pointer">
+      <Box pt="1.5" cursor="pointer">
         <NextImage
           layout="fixed"
           width="28"
