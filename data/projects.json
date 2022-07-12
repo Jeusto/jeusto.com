@@ -30,8 +30,8 @@
     "demoLink": "https://freshflesh.000webhostapp.com/",
     "tags": [
       "Php",
-      "Sqlite",
-      "Sass"
+      "Sass",
+      "Sqlite"
     ],
     "order": 66,
     "isSecondary": true,
@@ -174,8 +174,8 @@
     "demoLink": "http://1pt.one/",
     "tags": [
       "Python",
-      "Flask",
-      "MongoDB"
+      "MongoDB",
+      "Flask"
     ],
     "order": 22,
     "isSecondary": false,
@@ -192,8 +192,8 @@
     "repoLink": "https://github.com/Jeusto/twitter-opinion-frontend",
     "demoLink": "https://twitteropinion.jeusto.com",
     "tags": [
-      "Next.js",
       "Python",
+      "Next.js",
       "Flask",
       "Chakra UI"
     ],

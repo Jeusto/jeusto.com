@@ -10,7 +10,6 @@ export default function GlobalStyle({ children }) {
           }
 
           ${heading}
-          ${navbar_links}
         `}
       />
       {children}
