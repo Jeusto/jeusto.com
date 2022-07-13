@@ -1,10 +1,27 @@
+import "@fontsource/abhaya-libre";
+import "@fontsource/abhaya-libre/400.css";
+import "@fontsource/abhaya-libre/500.css";
+import "@fontsource/abhaya-libre/600.css";
+import "@fontsource/abhaya-libre/700.css";
+import "@fontsource/abhaya-libre/800.css";
+import "@fontsource/inter";
+import "@fontsource/inter/100.css";
+import "@fontsource/inter/200.css";
+import "@fontsource/inter/300.css";
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/500.css";
+import "@fontsource/inter/600.css";
+import "@fontsource/inter/700.css";
+import "@fontsource/inter/800.css";
+import "@fontsource/inter/900.css";
+import "@fontsource/jetbrains-mono";
 import { theme as chakraTheme } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
 import { mode } from "@chakra-ui/theme-tools";
 
 const fonts = {
-  body: "Inter",
-  heading: "Abhaya Libre",
+  body: `"Inter", sans-serif`,
+  heading: `"Abhaya Libre", serif`,
   code: "Jetbrains Mono, monospace",
 };
 const fontSizes = {
@@ -62,12 +79,14 @@ const components = {
     },
     variants: {
       navigation: {
-        fontWeight: "bold",
         paddingX: "5",
       },
     },
   },
   Button: {
+    baseStyle: {
+      fontWeight: "500",
+    },
     variants: {
       solid: (props) => ({
         bg: mode("gray.100", "gray.800")(props),

@@ -1,6 +1,3 @@
-import "@fontsource/abhaya-libre";
-import "@fontsource/inter";
-import "@fontsource/jetbrains-mono";
 import type { AppProps } from "next/app";
 import Navbar from "@/components/website/Navbar/Navbar";
 import { ChakraProvider, Box } from "@chakra-ui/react";
