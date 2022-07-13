@@ -1,4 +1,4 @@
-const title = "Arhun Saday";
+const title = "Jeusto ― Arhun Saday";
 const description =
   "Full stack developer in France, an undergraduate computer science student at the University of Strasbourg.";
 
@@ -14,7 +14,7 @@ const SEO = {
     description,
     images: [
       {
-        url: "https://danielwirtz.com/static/images/banner.jpg",
+        url: "",
         alt: title,
         width: 2240,
         height: 1260,

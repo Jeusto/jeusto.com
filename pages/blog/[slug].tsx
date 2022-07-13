@@ -3,7 +3,6 @@ import { bundleMDX } from "mdx-bundler";
 import { getMDXComponent } from "mdx-bundler/client";
 import fs from "fs";
 
-import { BundleMDXOptions } from "mdx-bundler/dist/types";
 import type { ProcessorOptions } from "@mdx-js/esbuild/lib";
 
 // mdx plugins
@@ -17,9 +16,8 @@ import remarkSmartypants from "@silvenon/remark-smartypants";
 import remarkTableofContents from "remark-toc";
 import remarkUnwrapImages from "remark-unwrap-images";
 
-import { Post as Metadata } from "@/types/post";
 import mdxComponents from "@/components/mdx";
-import Blog from "@/layouts/Blog";
+import BlogLayout from "@/layouts/BlogLayout";
 
 interface PostProps {
   code: string;
@@ -37,9 +35,9 @@ export default function Post({ code, metadata }: PostProps) {
   const Component = useMemo(() => getMDXComponent(code), [code]);
 
   return (
-    <Blog metadata={metadata}>
+    <BlogLayout metadata={metadata}>
       <Component components={mdxComponents as any} />
-    </Blog>
+    </BlogLayout>
   );
 }
 

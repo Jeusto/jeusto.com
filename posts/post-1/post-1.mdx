@@ -1,5 +1,5 @@
 ---
-title: First Post
+title: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat, ipsum
 description: This is the first post
 slug: "post-1"
 published: "2021-10-10"
@@ -9,6 +9,8 @@ image: "banner.jpg"
 
 import { Counter } from "./Counter";
 
+<Counter />
+
 # First Post
 
 This is the first post.
@@ -17,4 +19,21 @@ You can use regular Markdown inside here like _italic_ or **bold**.
 
 Here's a component.
 
-<Counter />
+- asterisks for unordered items
+
+1. decimals and a dot for ordered items
+
+```jsx
+return (
+  <>
+    <NextLink href={href}>
+      <Button
+        aria-current={isActive ? "page" : undefined}
+        variant={isActive ? "solid" : "ghost"}
+      >
+        {name}
+      </Button>
+    </NextLink>
+  </>
+);
+```
