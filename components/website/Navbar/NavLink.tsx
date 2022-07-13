@@ -2,7 +2,7 @@ import { Button, Link } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { useRouter } from "next/dist/client/router";
 
-export default function NavbarLink({ href, name }) {
+export default function NavbarLink({ href, name, onClick }) {
   let isActive = false;
   const { pathname } = useRouter();
 
@@ -18,8 +18,9 @@ export default function NavbarLink({ href, name }) {
   return (
     <>
       <NextLink href={href} passHref>
-        <Link href={href} tabIndex={-1}>
+        <Link tabIndex={-1}>
           <Button
+            onClick={onClick}
             aria-current={isActive ? "page" : undefined}
             variant={isActive ? "solid" : "ghost"}
           >

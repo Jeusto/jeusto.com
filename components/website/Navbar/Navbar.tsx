@@ -21,8 +21,7 @@ import darkLogo from "/public/dark-logo.svg";
 import useMediaQuery from "../../../hooks/useMediaQuery";
 import useTranslation from "next-translate/useTranslation";
 import Flag from "./Flag";
-import { AiOutlineMenu } from "react-icons/ai";
-import { FiMoon, FiSun } from "react-icons/fi";
+import { FiMoon, FiSun, FiMenu } from "react-icons/fi";
 import NavLink from "./NavLink";
 import useSound from "use-sound";
 
@@ -43,11 +42,37 @@ export default function Navbar() {
     <>
       <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
         <DrawerOverlay />
-        <DrawerContent>
+        <DrawerContent
+          bg={useColorModeValue("gray.50", "gray.850")}
+          zIndex={999}
+        >
           <DrawerCloseButton />
-          <DrawerHeader>Create your account</DrawerHeader>
 
-          <DrawerBody></DrawerBody>
+          <DrawerBody mt="10">
+            <VStack style={{ margin: 0 }}>
+              <NavLink onClick={onClose} href="/" name={t("navbar_home")} />
+              <NavLink onClick={onClose} href="/blog" name={t("navbar_blog")} />
+              <NavLink
+                onClick={onClose}
+                href="/projects"
+                name={t("navbar_projects")}
+              />
+              <IconButton
+                aria-label="Toggle dark mode"
+                onClick={() => {
+                  colorMode === "dark"
+                    ? play({ id: "on" })
+                    : play({ id: "off" });
+                  toggleColorMode();
+                  onClose();
+                }}
+                borderRadius="lg"
+                variant="ghost"
+                icon={colorMode === "light" ? <FiMoon /> : <FiSun />}
+              />
+              <Flag onClick={onClose} />
+            </VStack>
+          </DrawerBody>
         </DrawerContent>
       </Drawer>
     </>
@@ -58,7 +83,7 @@ export default function Navbar() {
       pos="fixed"
       w="100%"
       bg={useColorModeValue("gray.50", "gray.850")}
-      zIndex={99999}
+      zIndex={99}
       boxShadow="sm"
       mb="10"
       borderBottomWidth="1px"
@@ -89,11 +114,13 @@ export default function Navbar() {
         {!isLargerThan768 && (
           <>
             <Icon
-              as={AiOutlineMenu}
+              as={FiMenu}
               cursor="pointer"
               w={7}
               h={7}
-              onClick={onOpen}
+              onClick={() => {
+                isOpen ? onClose() : onOpen();
+              }}
             />
             <MobileNavbar />
           </>
@@ -101,9 +128,13 @@ export default function Navbar() {
         {isLargerThan768 && (
           <>
             <HStack style={{ margin: 0 }}>
-              <NavLink href="/" name={t("navbar_home")} />
-              <NavLink href="/blog" name={t("navbar_blog")} />
-              <NavLink href="/projects" name={t("navbar_projects")} />
+              <NavLink onClick={onClose} href="/" name={t("navbar_home")} />
+              <NavLink onClick={onClose} href="/blog" name={t("navbar_blog")} />
+              <NavLink
+                onClick={onClose}
+                href="/projects"
+                name={t("navbar_projects")}
+              />
             </HStack>
             <HStack style={{ margin: 0 }}>
               <IconButton
@@ -118,11 +149,7 @@ export default function Navbar() {
                 variant="ghost"
                 icon={colorMode === "light" ? <FiMoon /> : <FiSun />}
               />
-              <NextLink href="/" locale={lang === "en" ? "fr" : "en"} passHref>
-                <Box cursor="pointer">
-                  <Flag />
-                </Box>
-              </NextLink>
+              <Flag onClick={onClose} />
             </HStack>
           </>
         )}
