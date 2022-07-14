@@ -3,7 +3,12 @@ import SlideWhenVisible from "@/hooks/SlideWhenVisible";
 import { FiArrowRight } from "react-icons/fi";
 import NextLink from "next/link";
 
-export default function ViewAllButton({ text, url }) {
+interface ViewAllButtonProps {
+  text: string;
+  url: string;
+}
+
+export default function ViewAllButton({ text, url }: ViewAllButtonProps) {
   return (
     <SlideWhenVisible threshold="0.11">
       <NextLink href={url}>

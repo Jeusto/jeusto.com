@@ -15,6 +15,14 @@ import "@fontsource/inter/700.css";
 import "@fontsource/inter/800.css";
 import "@fontsource/inter/900.css";
 import "@fontsource/jetbrains-mono";
+import "@fontsource/jetbrains-mono/100.css";
+import "@fontsource/jetbrains-mono/200.css";
+import "@fontsource/jetbrains-mono/300.css";
+import "@fontsource/jetbrains-mono/400.css";
+import "@fontsource/jetbrains-mono/500.css";
+import "@fontsource/jetbrains-mono/600.css";
+import "@fontsource/jetbrains-mono/700.css";
+import "@fontsource/jetbrains-mono/800.css";
 import { theme as chakraTheme } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
 import { mode } from "@chakra-ui/theme-tools";
@@ -22,7 +30,8 @@ import { mode } from "@chakra-ui/theme-tools";
 const fonts = {
   body: `"Inter", sans-serif`,
   heading: `"Abhaya Libre", serif`,
-  code: "Jetbrains Mono, monospace",
+  code: "JetBrains Mono, monospace",
+  mono: "JetBrains Mono, monospace",
 };
 const fontSizes = {
   fontSizes: {
@@ -50,7 +59,21 @@ const styles = {
     body: {
       color: mode("gray.900", "gray.100")(props),
       bg: mode("gray.100", "gray.900")(props),
-      overflowY: "scroll",
+    },
+    ".chakra-heading": {
+      position: "relative",
+      marginLeft: "-7",
+      paddingLeft: "7",
+      "&:hover": {
+        ".chakra-link::before": {
+          content: `"#"`,
+          display: "inline-block",
+          width: "100%",
+          position: "absolute",
+          left: "0",
+          color: mode("teal.400", "teal.200")(props),
+        },
+      },
     },
   }),
 };
@@ -71,6 +94,11 @@ const colors = {
 };
 
 const components = {
+  Heading: {
+    h1: (props) => ({
+      color: mode("teal.500", "teal.200")(props),
+    }),
+  },
   Link: {
     baseStyle: {
       "&:hover": {
@@ -78,9 +106,14 @@ const components = {
       },
     },
     variants: {
-      navigation: {
-        paddingX: "5",
-      },
+      blog: (props) => ({
+        textDecorationColor: mode("teal.400", "teal.200")(props),
+        textDecoration: "underline",
+        "&:hover": {
+          textDecoration: "underline",
+          color: mode("teal.500", "teal.200")(props),
+        },
+      }),
     },
   },
   Button: {
@@ -89,6 +122,12 @@ const components = {
     },
     variants: {
       solid: (props) => ({
+        bg: mode("gray.100", "gray.800")(props),
+        "&:hover": {
+          bg: mode("gray.200", "gray.700")(props),
+        },
+      }),
+      cardSolid: (props) => ({
         bg: mode("gray.100", "gray.800")(props),
         "&:hover": {
           bg: mode("gray.200", "gray.700")(props),

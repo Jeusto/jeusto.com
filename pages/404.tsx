@@ -6,7 +6,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
-import SlideWhenVisible from "../hooks/SlideWhenVisible";
+import SlideWhenVisible from "@/hooks/SlideWhenVisible";
 import useTranslation from "next-translate/useTranslation";
 
 export default function Custom404() {
@@ -17,7 +17,6 @@ export default function Custom404() {
       <SlideWhenVisible threshold="0.11">
         <VStack>
           <Heading
-            className="gradient_heading"
             color={useColorModeValue("teal.500", "teal.100")}
             margin="auto"
             textAlign="center"

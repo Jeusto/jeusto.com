@@ -12,8 +12,8 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
-import SlideWhenVisible from "../../../hooks/SlideWhenVisible";
-import Tags from "./Tags";
+import SlideWhenVisible from "@/hooks/SlideWhenVisible";
+import Tags from "@/components/website/Projects/Tags";
 import Image from "next/image";
 
 type CardProps = {
@@ -67,7 +67,7 @@ export default function MainProjectCard({
           justifyContent="flex-start"
           alignItems="flex-start"
           spacing="1.5"
-          pt="5"
+          pt="3"
         >
           <Flex w="100%" justifyContent="space-between" alignItems="center">
             <Heading as="h3" size="lg">
@@ -80,7 +80,7 @@ export default function MainProjectCard({
                     variant="ghost"
                     borderRadius="md"
                     aria-label="Project demo"
-                    icon={<FiExternalLink size={"1.4rem"} />}
+                    icon={<FiExternalLink size={"1.4em"} />}
                   />
                 </Link>
               )}
@@ -89,7 +89,7 @@ export default function MainProjectCard({
                   variant="ghost"
                   borderRadius="md"
                   aria-label="Project repo"
-                  icon={<FiGithub size={"1.4rem"} />}
+                  icon={<FiGithub size={"1.4em"} />}
                 />
               </Link>
             </HStack>

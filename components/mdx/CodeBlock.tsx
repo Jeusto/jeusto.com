@@ -1,4 +1,9 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import { useColorMode, Box } from "@chakra-ui/react";
+import { prismDarkTheme, prismLightTheme } from "@/styles/prism";
+import { Global } from "@emotion/react";
+import { Button } from "@chakra-ui/react";
+import { FiCopy } from "react-icons/fi";
 
 interface CodeBlockProps {
   children: React.ReactNode;
@@ -6,6 +11,10 @@ interface CodeBlockProps {
 
 export default function CodeBlock({ children }: CodeBlockProps) {
   const preRef = useRef<HTMLPreElement>(null);
+  const { colorMode } = useColorMode();
+  const prismTheme = colorMode === "light" ? prismLightTheme : prismDarkTheme;
+
+  const [isCopied, setIsCopied] = useState(false);
 
   function copy() {
     const content = preRef.current?.textContent ?? "";
@@ -13,36 +22,24 @@ export default function CodeBlock({ children }: CodeBlockProps) {
   }
 
   return (
-    <div className="code-block">
+    <Box position="relative">
       <pre ref={preRef}>{children}</pre>
-      <button onClick={copy} className="copy">
-        <span className="sr-only">Copy</span>
-        <span>📋</span>
-      </button>
+      <Button
+        pos="absolute"
+        top="-7"
+        right="0"
+        onClick={() => {
+          copy();
+          setIsCopied(true);
+        }}
+        size="xs"
+        variant="ghost"
+        leftIcon={<FiCopy />}
+      >
+        {isCopied ? "Copied" : "Copy"}
+      </Button>
 
-      <style jsx>
-        {`
-          .code-block {
-            position: relative;
-          }
-
-          .copy {
-            cursor: pointer;
-            position: absolute;
-            top: -34px;
-            right: 20px;
-            font-size: 1rem;
-            background: none;
-            border-radius: var(--border-base);
-            border: none;
-            transition: transform 0.1s ease;
-          }
-
-          .copy:active {
-            transform: scale(0.9);
-          }
-        `}
-      </style>
-    </div>
+      <Global styles={prismTheme} />
+    </Box>
   );
 }

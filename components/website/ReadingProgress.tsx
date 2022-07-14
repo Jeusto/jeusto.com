@@ -1,4 +1,4 @@
-import { Box, useColorModeValue } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import React, { useState, useEffect } from "react";
 
 export default function ReadingProgress({ target }) {
@@ -40,12 +40,12 @@ export default function ReadingProgress({ target }) {
       bg="teal.400"
       left={0}
       right={0}
-      top={{ base: "auto", md: "16" }}
-      bottom={{ base: "16", md: "auto" }}
-      h="5px"
+      top="16"
+      bottom="auto"
+      h="3px"
       transition="all 0.10s"
       transition-timing-function="spring(1 100 10 10)"
-      mt="-5px"
+      mt="-4px"
       w={`${readingProgress}%`}
       zIndex={100}
       transform={{ base: "translateY(2px)", md: "translateY(2px)" }}

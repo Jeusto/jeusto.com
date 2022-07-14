@@ -1,5 +1,5 @@
 import Seo from "@/components/Seo";
-import { Post } from "@/types/post";
+import { Post } from "@/utils/types";
 import {
   Wrap,
   Flex,
@@ -11,26 +11,27 @@ import {
   AspectRatio,
   Box,
 } from "@chakra-ui/react";
-import { FiClock, FiTag } from "react-icons/fi";
+import { FiCalendar, FiClock, FiTag } from "react-icons/fi";
 import SlideWhenVisible from "@/hooks/SlideWhenVisible";
 import { createRef } from "react";
-import ReadingProgress from "@/components/blog/ReadingProgress";
+import ReadingProgress from "@/components/website/ReadingProgress";
 import { useColorModeValue } from "@chakra-ui/react";
 
 interface BlogProps {
   children: React.ReactNode;
-  metadata?: Post;
+  frontmatter?: Post;
 }
 
-export default function BlogLayout({ children, metadata }: BlogProps) {
+export default function BlogLayout({ children, frontmatter }: BlogProps) {
   const target = createRef() as React.MutableRefObject<HTMLInputElement>;
   const colorModeValue = useColorModeValue("teal.500", "teal.200");
 
   return (
     <>
-      <>
-        <Seo {...metadata} />
-        {metadata && (
+      <ReadingProgress target={target} />
+      <Box mb="20">
+        <Seo {...frontmatter} />
+        {frontmatter && (
           <article ref={target}>
             <Flex
               transition="background-color 200ms linear"
@@ -53,19 +54,21 @@ export default function BlogLayout({ children, metadata }: BlogProps) {
                     alignItems="center"
                   >
                     <Heading color={colorModeValue} as="h1" size="2xl">
-                      {metadata.title}
+                      {frontmatter.title}
                     </Heading>
                   </Flex>
-                  <Wrap>
-                    <HStack spacing="5">
-                      <HStack>
-                        <FiClock />
-                        <Text>15 min read</Text>
-                      </HStack>
-                      <HStack>
-                        <FiTag />
-                        <Text>{metadata.category}</Text>
-                      </HStack>
+                  <Wrap spacing="5">
+                    <HStack>
+                      <FiCalendar />
+                      <Text>{frontmatter.published}</Text>
+                    </HStack>
+                    <HStack>
+                      <FiClock />
+                      <Text>{frontmatter.readingTime}</Text>
+                    </HStack>
+                    <HStack>
+                      <FiTag />
+                      <Text>{frontmatter.category}</Text>
                     </HStack>
                   </Wrap>
                 </VStack>
@@ -73,19 +76,18 @@ export default function BlogLayout({ children, metadata }: BlogProps) {
                   <Image
                     boxShadow="xs"
                     borderRadius="md"
-                    src={`/images/posts/${metadata.slug}/thumbnail.png`}
+                    src={`/images/posts/${frontmatter.slug}/thumbnail.png`}
                     alt=""
                   ></Image>
                 </AspectRatio>
+                <Box as="main" className="post">
+                  {children}
+                </Box>
               </SlideWhenVisible>
-              <Box as="main" className="post">
-                {children}
-              </Box>
             </Flex>
           </article>
         )}
-      </>
-      <ReadingProgress target={target} />
+      </Box>
     </>
   );
 }

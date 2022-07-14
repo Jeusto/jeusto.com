@@ -1,13 +1,14 @@
-import MainProjects from "../components/website/Projects/MainProjects";
-import SecondaryProjects from "../components/website/Projects/SecondaryProjects";
+import MainProjects from "@/components/website/Projects/MainProjects";
+import SecondaryProjects from "@/components/website/Projects/SecondaryProjects";
 import { Flex } from "@chakra-ui/react";
-import fsPromises from "fs/promises";
-import path from "path";
 import SectionTitle from "@/components/website/SectionTitle";
 import useTranslation from "next-translate/useTranslation";
+import { getAllProjects } from "@/utils/getData";
+import { Project } from "@/utils/types";
 
-export default function AllProjects({ projects }) {
+export default function AllProjects({ projects }: { projects: Project[] }) {
   const { t } = useTranslation("common");
+
   return (
     <>
       <Flex
@@ -30,9 +31,7 @@ export default function AllProjects({ projects }) {
 }
 
 export async function getStaticProps() {
-  let filePath = path.resolve(process.cwd(), "data/projects.json");
-  let projects = await fsPromises.readFile(filePath, "utf8");
-  projects = JSON.parse(projects);
+  const projects = await getAllProjects();
 
   return {
     props: {

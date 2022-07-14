@@ -1,6 +1,6 @@
 const title = "Jeusto ― Arhun Saday";
 const description =
-  "Full stack developer in France, an undergraduate computer science student at the University of Strasbourg.";
+  "Full stack developer in France and an undergraduate computer science.";
 
 const SEO = {
   title,
@@ -14,10 +14,10 @@ const SEO = {
     description,
     images: [
       {
-        url: "",
+        url: "https://i.imgur.com/qSJ9ifH.png",
         alt: title,
-        width: 2240,
-        height: 1260,
+        width: 1920,
+        height: 1080,
       },
     ],
   },

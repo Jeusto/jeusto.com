@@ -6,21 +6,19 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
-import SlideWhenVisible from "../hooks/SlideWhenVisible";
-import PostsList from "@/components/website/BlogSection/PostsList";
+import SlideWhenVisible from "@/hooks/SlideWhenVisible";
+import PostsList from "@/components/website/Posts/PostsList";
+import { getAllPosts } from "@/utils/getData";
+import { Post } from "@/utils/types";
 
-import { bundleMDX } from "mdx-bundler";
-import fs from "fs";
-
-export default function Blog({ posts }) {
+export default function Blog({ posts }: { posts: Post[] }) {
   return (
     <Flex
       transition="background-color 200ms linear"
       alignItems="left"
       direction="column"
       m="auto"
-      pr="10"
-      pl="10"
+      px="10"
       maxW="1000px"
       mb="20"
     >
@@ -51,28 +49,11 @@ export default function Blog({ posts }) {
 }
 
 export async function getStaticProps() {
-  const currentDirectory = process.cwd();
-  const posts = fs.readdirSync(`${currentDirectory}/posts`);
-  const postsMetadata: any[] = [];
-
-  for (let post of posts) {
-    const postPath = `${currentDirectory}/posts/${post}/${post}.mdx`;
-    const markdown = await bundleMDX({ file: postPath });
-    const { frontmatter } = markdown;
-
-    const timestamp = new Date(frontmatter.published).valueOf();
-    frontmatter.published = timestamp;
-
-    postsMetadata.push(frontmatter);
-  }
-
-  const sortedPosts = postsMetadata.sort(
-    (firstEl, secondEl) => secondEl.published - firstEl.published
-  );
+  const posts = await getAllPosts();
 
   return {
     props: {
-      posts: sortedPosts,
+      posts,
     },
   };
 }

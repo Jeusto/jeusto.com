@@ -1,19 +1,14 @@
-import { Box, Heading, Flex, SimpleGrid, VStack } from "@chakra-ui/layout";
-import { Button } from "@chakra-ui/react";
-import MainProjectCard from "./MainProjectCard";
-import SecondaryProjectCard from "./SecondaryProjectCard";
-import SlideWhenVisible from "../../../hooks/SlideWhenVisible";
+import { Box, VStack } from "@chakra-ui/layout";
+import SecondaryProjectCard from "@/components/website/Projects/SecondaryProjectCard";
 import useTranslation from "next-translate/useTranslation";
-import { FiArrowRight } from "react-icons/fi";
-import NextLink from "next/link";
-import { useColorModeValue } from "@chakra-ui/react";
+import { Project } from "@/utils/types";
 
-type ProjectsProps = {
-  projects: object;
-};
-
-export default function SecondaryProjects({ projects }: ProjectsProps) {
-  const { t, lang } = useTranslation("common");
+export default function SecondaryProjects({
+  projects,
+}: {
+  projects: Project[];
+}) {
+  const { lang } = useTranslation("common");
 
   return (
     <Box id="projects">

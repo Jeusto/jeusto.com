@@ -10,7 +10,7 @@ import { DefaultSeo } from "next-seo";
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider resetCSS theme={customTheme}>
-      <IconContext.Provider value={{ size: "1.4rem" }}>
+      <IconContext.Provider value={{ size: "1.4em" }}>
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" type="image/png" sizes="96x96" href="/favicon.png" />

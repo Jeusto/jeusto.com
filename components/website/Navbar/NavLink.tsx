@@ -22,7 +22,7 @@ export default function NavbarLink({ href, name, onClick }) {
           <Button
             onClick={onClick}
             aria-current={isActive ? "page" : undefined}
-            variant={isActive ? "solid" : "ghost"}
+            variant={isActive ? "cardSolid" : "ghost"}
           >
             {name}
           </Button>

@@ -49,7 +49,7 @@ export default function MainProjectCard({
           boxShadow: "lg",
         }}
       >
-        <HStack spacing="3">
+        <Wrap spacing="3">
           {image && (
             <Box alignSelf={"flex-start"}>
               <Image
@@ -77,7 +77,7 @@ export default function MainProjectCard({
                       variant="ghost"
                       borderRadius="md"
                       aria-label="Project demo"
-                      icon={<FiExternalLink size={"1.4rem"} />}
+                      icon={<FiExternalLink size={"1.4em"} />}
                     />
                   </Link>
                 )}
@@ -86,7 +86,7 @@ export default function MainProjectCard({
                     variant="ghost"
                     borderRadius="md"
                     aria-label="Project repo"
-                    icon={<FiGithub size={"1.4rem"} />}
+                    icon={<FiGithub size={"1.4em"} />}
                   />
                 </Link>
               </HStack>
@@ -95,7 +95,7 @@ export default function MainProjectCard({
               <Tags tags={tags} />
             </Wrap>
           </VStack>
-        </HStack>
+        </Wrap>
         <Text mt="1">{description}</Text>
       </VStack>
     </SlideWhenVisible>

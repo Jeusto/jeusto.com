@@ -8,7 +8,6 @@ import {
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
-  DrawerHeader,
   DrawerBody,
   Icon,
   useColorMode,
@@ -16,13 +15,13 @@ import {
 } from "@chakra-ui/react";
 import NextImage from "next/image";
 import NextLink from "next/link";
-import whiteLogo from "/public/white-logo.svg";
-import darkLogo from "/public/dark-logo.svg";
-import useMediaQuery from "../../../hooks/useMediaQuery";
+import whiteLogo from "@/public/white-logo.svg";
+import darkLogo from "@/public/dark-logo.svg";
+import useMediaQuery from "@/hooks/useMediaQuery";
 import useTranslation from "next-translate/useTranslation";
-import Flag from "./Flag";
+import Flag from "@/components/website/Navbar/Flag";
 import { FiMoon, FiSun, FiMenu } from "react-icons/fi";
-import NavLink from "./NavLink";
+import NavLink from "@/components/website/Navbar/NavLink";
 import useSound from "use-sound";
 
 export default function Navbar() {
@@ -31,7 +30,7 @@ export default function Navbar() {
   const { t, lang } = useTranslation("common");
   const { colorMode, toggleColorMode } = useColorMode();
   const [play] = useSound("/sounds/click.mp3", {
-    volume: 0.1,
+    volume: 0.4,
     sprite: {
       on: [0, 300],
       off: [500, 300],

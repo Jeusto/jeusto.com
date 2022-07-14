@@ -2,8 +2,8 @@ import { Box, Tooltip } from "@chakra-ui/react";
 import NextImage from "next/image";
 import NextLink from "next/link";
 import useTranslation from "next-translate/useTranslation";
-import ukFlag from "/public/uk-flag.svg";
-import frFlag from "/public/fr-flag.svg";
+import ukFlag from "@/public/uk-flag.svg";
+import frFlag from "@/public/fr-flag.svg";
 
 export default function CustomLink({ onClick }) {
   const { lang } = useTranslation("common");
