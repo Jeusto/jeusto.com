@@ -1,0 +1,123 @@
+---
+title: This is an example post, the first one is yet to come...
+description: This is an example post
+slug: "example-post"
+published: "2022-07-14"
+category: "typescript, react, tips"
+---
+
+import { Counter } from "./Counter";
+
+# h1 Heading
+
+---
+
+## h2 Heading
+
+---
+
+### h3 Heading
+
+**This is bold text**
+
+_This is italic text_
+
+~~Strikethrough~~
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ex euismod
+
+## Code
+
+This is an example of `inline code`
+
+Code block and syntax highlighting
+
+```jsx {2-3, 16} showLineNumbers
+
+import { Heading } from "@chakra-ui/layout";
+import SlideWhenVisible from "@/hooks/SlideWhenVisible";
+import { useColorModeValue } from "@chakra-ui/react";
+
+export default function SectionTitle({ title }) {
+  return (
+    <SlideWhenVisible threshold="0.11">
+      <Heading
+        color={useColorModeValue("teal.500", "teal.200")}
+        mt="16"
+        mb="5"
+        as="h2"
+        size="xl"
+      >
+        {title}
+      </Heading>
+    </SlideWhenVisible>
+  );
+}`
+```
+
+## Custom component
+
+<Counter />
+
+## Text
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum ligula at condimentum varius. Integer laoreet libero sed enim egestas tincidunt. Sed bibendum nibh eu mattis imperdiet. Mauris felis orci, sollicitudin nec maximus ac, fringilla quis mi. Pellentesque sed dolor efficitur, fermentum erat eu, faucibus risus. Maecenas quis ex sit amet justo laoreet egestas. Maecenas ultricies, neque ut placerat pretium, arcu augue scelerisque tortor, ut elementum libero urna ut nunc.
+
+- Create a list by starting a line with `+`, `-`, or `*`
+- Sub-lists are made by indenting 2 spaces:
+  - Marker character change forces new list start:
+    - Ac tristique libero volutpat at
+    * Facilisis in pretium nisl aliquet
+    - Nulla volutpat aliquam velit
+- Very easy!
+
+Ordered
+
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
+
+4. You can use sequential numbers...
+5. ...or keep all the numbers as 1.
+
+<br />
+
+## Tables
+
+| Right | Left | Default | Center |
+| ----: | :--- | ------- | :----: |
+|    12 | 12   | 12      |   12   |
+|   123 | 123  | 123     |  123   |
+|     1 | 1    | 1       |   1    |
+
+## Links
+
+[link text](http://dev.nodeca.com)
+
+[link with title](http://nodeca.github.io/pica/demo/ "title text!")
+
+Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
+
+## Images
+
+![Minion](/images/posts/example-post/thumbnail.png)
+
+## Embed
+
+[![codepen](https://codepen.io/nodeca/pen/bWdbjq.png)](https://codepen.io/jh3y/embed/jOGroXN?default-tab=html%2Cresult)
+
+## Footnotes
+
+Footnote 1 link[^first].
+
+Footnote 2 link[^second].
+
+Inline footnote[^second] definition.
+
+Duplicated footnote reference[^second].
+
+[^first]: Footnote **can have markup**
+
+    and multiple paragraphs.
+
+[^second]: [dev.nodeca.com](http://dev.nodeca.com)

@@ -22,7 +22,7 @@ export default function CodeBlock({ children }: CodeBlockProps) {
   }
 
   return (
-    <Box position="relative">
+    <Box marginY="5" position="relative">
       <pre ref={preRef}>{children}</pre>
       <Button
         pos="absolute"
