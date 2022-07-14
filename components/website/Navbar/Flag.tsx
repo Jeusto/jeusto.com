@@ -25,6 +25,7 @@ export default function CustomLink({ onClick }) {
               width="28"
               height="28"
               src={lang === "en" ? ukFlag : frFlag}
+              alt="Flag image to switch the website language"
             ></NextImage>
           </Box>
         </Tooltip>

@@ -148,7 +148,7 @@ const components = {
 };
 
 const config = {
-  initialColorMode: "system",
+  initialColorMode: "light",
   disableTransitionOnChange: false,
 };
 
