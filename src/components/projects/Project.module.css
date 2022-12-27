@@ -1,0 +1,14 @@
+.card {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  height: 100%;
+}
+
+.cardContainer {
+  margin-bottom: calc(var(--ifm-spacing-horizontal) * 2);
+}
+
+.role {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+}
