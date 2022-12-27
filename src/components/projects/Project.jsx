@@ -25,11 +25,7 @@ export const Project = ({
         </div>
         <div className="card__body">
           <h2>{title}</h2>
-          <p>
-            {document.documentElement.lang === "fr"
-              ? descriptionFr
-              : description}
-          </p>
+          <p>{description}</p>
         </div>
         <div className="card__footer">
           {demoLink && (
@@ -44,7 +40,9 @@ export const Project = ({
               <span className="button__icon">
                 <LinkIcon />
               </span>
-              Website
+              <Translate id="demo-button.text" className="text">
+                Website
+              </Translate>
             </a>
           )}
           {repoLink && (

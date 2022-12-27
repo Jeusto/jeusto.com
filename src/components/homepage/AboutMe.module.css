@@ -18,7 +18,6 @@
 .avatar > div {
   border-radius: 5%;
   max-height: 310px;
-  transform: rotate(3deg);
 }
 
 @media only screen and (max-width: 996px) {
