@@ -33,7 +33,11 @@ const config = {
         docs: false,
         blog: {
           showReadingTime: true,
-          blogSidebarCount: 0,
+          blogSidebarCount: "ALL",
+          feedOptions: {
+            type: "all",
+            copyright: `Copyright © ${new Date().getFullYear()} Arhun Saday.`,
+          },
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -45,6 +49,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      image: "img/meta-image.png",
       colorMode: {
         defaultMode: "dark",
         disableSwitch: false,
@@ -78,13 +83,14 @@ const config = {
                 label: "Email: arhunsad@gmail.com",
                 href: "mailto:arhunsad@gmail.com",
               },
-              {
-                label: "Github: @Jeusto",
-                href: "https://github.com/Jeusto/",
-              },
+
               {
                 label: "LinkedIn: @asaday",
                 href: "https://www.linkedin.com/in/asaday/en",
+              },
+              {
+                label: "Github: @Jeusto",
+                href: "https://github.com/Jeusto/",
               },
               {
                 label: "Twitter @Jeustoo",
