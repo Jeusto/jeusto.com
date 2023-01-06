@@ -20,7 +20,7 @@ export const AboutMe = ({ avatar, descriptionLines }) => {
         </div>
         <div className={clsx("col col--4", styles.avatarContainer)}>
           <div className={styles.avatar}>
-            <Image img={avatar} />
+            <Image img={avatar} alt="Arhun Saday picture" />
           </div>
         </div>
       </div>

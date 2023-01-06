@@ -2,17 +2,20 @@ import React from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import { translate } from "@docusaurus/Translate";
-
+import Link from "@docusaurus/Link";
 import { AboutMe } from "../components/homepage/AboutMe";
 import { SocialLinks } from "../components/homepage/SocialLinks";
 import { Hero } from "../components/homepage/Hero";
+import { ProjectsList } from "../components/projects/ProjectsList";
+
+import projects from "../data/projects.json";
 import avatar from "./assets/index/avatar.png";
 
 const links = [
   {
     name: "GitHub",
     url: "https://github.com/Jeusto",
-    svg: (
+    icon: (
       <svg width="32" height="32" viewBox="0 0 24 24">
         <path
           fill="currentColor"
@@ -24,7 +27,7 @@ const links = [
   {
     name: "Twitter",
     url: "https://twitter.com/Jeustoo",
-    svg: (
+    icon: (
       <svg width="32" height="32" viewBox="0 0 24 24">
         <path
           fill="currentColor"
@@ -35,8 +38,10 @@ const links = [
   },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/asaday",
-    svg: (
+    url: translate({
+      id: "linkedin-link",
+    }),
+    icon: (
       <svg width="32" height="32" viewBox="0 0 24 24">
         <path
           fill="currentColor"
@@ -48,7 +53,7 @@ const links = [
   {
     name: "Youtube",
     url: "https://youtube.com/c/Jeusto",
-    svg: (
+    icon: (
       <svg width="32" height="32" viewBox="0 0 24 24">
         <path
           fill="currentColor"
@@ -59,7 +64,7 @@ const links = [
   },
 ];
 
-const lines = [
+const descriptionLines = [
   translate({
     id: "home.description.line1",
     message:
@@ -68,7 +73,7 @@ const lines = [
   translate({
     id: "home.description.line2",
     message:
-      "I do programming in various languages and technologies including Typescript, React.js, Python and much more. I'm passionate about software development, problem solving and I especially love creating all sorts of delightful products, interfaces, and interactions",
+      "I do programming in various languages and technologies including Typescript, React.js, Python and much more. I'm passionate about software development, problem solving and I especially love creating all sorts of delightful products, interfaces, and interactions.",
   }),
   translate({
     id: "home.description.line3",
@@ -77,16 +82,49 @@ const lines = [
   }),
 ];
 
+const projectsTitle = translate({
+  message: "A selection of personal projects",
+  id: "home.projects.heading",
+});
+
+const projectsDescription = translate({
+  id: "home.projects.description",
+  message:
+    "This is a list of projects that I have completed or am currently working on. Some of these projects were completed as part of my university coursework but most of them are personal projects that I have undertaken for my own learning or enjoyment. You can find the full list of projects on the 'Projects' page of this website.",
+});
+
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
 
   return (
     <Layout title="Home" description={siteConfig.tagline}>
       <Hero />
-      <main>
+      <main
+        style={{
+          paddingBottom: "2rem",
+        }}
+      >
         <div className="container padding-vert">
-          <AboutMe avatar={avatar} descriptionLines={lines} />
-          <SocialLinks data={links} />
+          <AboutMe avatar={avatar} descriptionLines={descriptionLines} />
+          <SocialLinks links={links} />
+          <ProjectsList
+            projects={projects}
+            maxCount={6}
+            showSecondary={false}
+            useH1Heading={false}
+            title={projectsTitle}
+            description={projectsDescription}
+          />
+          <div class="col text--right">
+            <b>
+              <Link to="/projects">
+                {translate({
+                  id: "home.projects.view-all",
+                  message: "View all projects",
+                })}
+              </Link>
+            </b>
+          </div>
         </div>
       </main>
     </Layout>

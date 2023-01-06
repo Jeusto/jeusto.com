@@ -4,15 +4,15 @@ import Translate from "@docusaurus/Translate";
 
 import styles from "./SocialLinks.module.css";
 
-export const SocialLinks = ({ data }) => {
-  const socialLinksComponents = data.map(({ name, url, svg }) => (
+export const SocialLinks = ({ links }) => {
+  const socialLinksComponents = links.map(({ name, url, icon }) => (
     <div className={clsx("col", styles.col)} key={name}>
       <a
         href={url}
         target="_blank"
         className={clsx("button button--outline button--primary", styles.btn)}
       >
-        <span className={styles.btnIcon}>{svg}</span>
+        <span className={styles.btnIcon}>{icon}</span>
         <span className={styles.btnText}>{name}</span>
       </a>
     </div>

@@ -27,7 +27,15 @@ export const SecondaryProjectCard = ({
               margin: "0 0 1rem 0",
             }}
           >
-            <Image width={"50rem"} img={require(`./assets/projects/${icon}`)} />
+            <Image
+              width={50}
+              height={50}
+              img={require(`./assets/projects/${icon}`)}
+              style={{
+                width: "50px",
+                height: "50px",
+              }}
+            />
             <h2
               style={{
                 margin: "0 0 0 1rem",
