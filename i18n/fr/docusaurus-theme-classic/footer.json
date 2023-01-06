@@ -46,5 +46,9 @@
   "link.item.label.Atom": {
     "message": "Atom",
     "description": "The label of footer link with label=Atom linking to /blog/atom.xml"
+  },
+  "link.item.label.Json": {
+    "message": "Json",
+    "description": "The label of footer link with label=Json linking to /blog/feed.json"
   }
 }

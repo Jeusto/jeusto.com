@@ -2,6 +2,7 @@ import clsx from "clsx";
 import React from "react";
 import Image from "@theme/IdealImage";
 import Translate from "@docusaurus/Translate";
+import i18n from "@generated/i18n";
 
 import LinkIcon from "./assets/icon-link.svg";
 import GithubIcon from "./assets/icon-github.svg";
@@ -10,6 +11,7 @@ import styles from "./Project.module.css";
 export const MainProjectCard = ({
   title,
   description,
+  descriptionFr,
   image,
   repoLink,
   demoLink,
@@ -21,7 +23,7 @@ export const MainProjectCard = ({
         <Image img={require(`./assets/projects/${image}`)} />
         <div className="card__body">
           <h2>{title}</h2>
-          <p>{description}</p>
+          <p>{i18n.currentLocale === "fr" ? descriptionFr : description}</p>
         </div>
         <div className="card__footer">
           {demoLink && (

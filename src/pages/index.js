@@ -38,9 +38,7 @@ const links = [
   },
   {
     name: "LinkedIn",
-    url: translate({
-      id: "linkedin-link",
-    }),
+    url: "https://www.linkedin.com/in/jeusto/",
     icon: (
       <svg width="32" height="32" viewBox="0 0 24 24">
         <path
@@ -88,7 +86,6 @@ const projectsTitle = translate({
 });
 
 const projectsDescription = translate({
-  id: "home.projects.description",
   message:
     "This is a list of projects that I have completed or am currently working on. Some of these projects were completed as part of my university coursework but most of them are personal projects that I have undertaken for my own learning or enjoyment. You can find the full list of projects on the 'Projects' page of this website.",
 });

@@ -8,7 +8,7 @@
     "description": "Navbar item with label Projects"
   },
   "item.label.Blog": {
-    "message": "Blog",
+    "message": "Blog (en anglais)",
     "description": "Navbar item with label Blog"
   }
 }

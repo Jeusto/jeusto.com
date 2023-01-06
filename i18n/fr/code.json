@@ -291,12 +291,8 @@
   "hero.subtitle2": {
     "message": "Actuellement etudiant en informatique à l'Université de Strasbourg."
   },
-  "linkedin-link": {
-    "message": "https://www.linkedin.com/in/asaday/",
-    "description": "LinkedIn profile link"
-  },
   "projects-page.heading": {
-    "message": "Projets"
+    "message": "Projets personnels"
   },
   "projects-page.description": {
     "message": "Voici quelques projets que j'ai réalisé."
@@ -322,22 +318,19 @@
   "home.description.line3": {
     "message": "Si vous êtes intéressé, vous pouvez jeter un coup d'œil à certains de mes projets ou lire mon blog (en anglais). Si vous avez une question ou que vous voulez collaborer, n'hésitez pas à m'envoyer un mail ou à me contacter via l'un des liens ci-dessous."
   },
-  "project.warmup.description": {
-    "message": "Une extension pour l'éditeur de code Vscode qui permet de s'entraîner à améliorer sa vitesse de frappe directement dans l'éditeur. Téléchargé et utilisé régulièrement par 4000+ développeurs."
+  "home.projects.heading": {
+    "message": "Une sélection de projets personnels"
   },
-  "project.1ptone.description": {
-    "message": "Un site minimaliste pour raccourcir des URLs de sites web et suivre le nombre de visites. Il y a également une API documentée et gratuit d'utilisation. Plus de 5000 visites par mois pour l'ensemble des liens raccourcis."
+  "home.projects.description": {
+    "message": "Voici une liste de projets que j'ai terminés ou sur lesquels je travaille actuellement. Certains de ces projets ont été réalisés dans le cadre de mes études, mais la plupart sont des projets personnels que j'ai entrepris pour m'amuser ou pour apprendre. Vous pouvez trouver la liste complète des projets sur la page 'Projets' de ce site."
   },
-  "project.candle.description": {
-    "message": "Une application de bureau multi-plateformes qui permet de télécharger et lire des livres gratuits offert par le Projet Gutenberg. Vous pouvez également annoter, prendre des notes, obtenir la définition d'un mot, etc."
+  "projects.description": {
+    "message": "Voici une liste de projets que j'ai terminés ou sur lesquels je travaille actuellement. Certains de ces projets ont été réalisés dans le cadre de mes études, mais la plupart sont des projets personnels que j'ai entrepris pour m'amuser ou pour apprendre."
   },
-  "project.triviaten.description": {
-    "message": "Une application web de quiz multijoueur avec des salons pour jouer avec ses amis. Parties en temps réel, avec un choix parmi plus de 20 catégories de questions et plus de 4000 questions."
+  "projects-page.secondary-heading": {
+    "message": "Autres projets notables"
   },
-  "project.twittersopinion.description": {
-    "message": "Un outil pour visualiser le sentiment global des utilisateurs de Twitter à propos d'un sujet particulier grâce à une librairie d'intelligence artificelle."
-  },
-  "project.dailywallpapers.description": {
-    "message": "Un simple site web pour trier, parcourir et télécharger les meilleurs fonds d'écran postés sur le réseau social Reddit chaque jour."
+  "home.projects.view-all": {
+    "message": "Voir tous les projets"
   }
 }
