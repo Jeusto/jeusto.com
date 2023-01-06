@@ -21,6 +21,8 @@ export default function FooterWrapper(props) {
           id="comments"
           repo={`jeusto/jeusto.com`}
           repoId={`R_kgDOIrxUAg`}
+          category="General"
+          categoryId="DIC_kwDOIrxUAs4CTcO3"
           mapping="title"
           theme={colorMode}
           reactionsEnabled="0"
