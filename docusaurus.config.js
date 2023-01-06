@@ -126,6 +126,10 @@ const config = {
                 label: "Atom",
                 to: "/blog/atom.xml",
               },
+              {
+                label: "Json",
+                to: "/blog/feed.json",
+              },
             ],
           },
         ],
