@@ -3,7 +3,7 @@
     "image": "warmup.png",
     "icon": "https://i.imgur.com/q3PDo4X.jpeg",
     "title": "Warm Up",
-    "description": "An extension for the code editor Vscode to practice and improve your typing speed right inside your editor. Downloaded and regularly used by 4000+ developers.",
+    "description": "An extension for the code editor Vscode to practice and improve your typing speed right inside your editor. Downloaded and regularly used by 6000+ developers.",
     "repoLink": "https://github.com/Jeusto/vscode-typing-test",
     "demoLink": "https://warmup.jeusto.com/",
     "tags": [
@@ -11,7 +11,7 @@
       "Vscode extension"
     ],
     "isSecondary": false,
-    "descriptionFr": "Une extension pour l'éditeur de code Vscode qui permet de s'entraîner à améliorer sa vitesse de frappe directement dans l'éditeur. Téléchargé et utilisé régulièrement par 4000+ développeurs."
+    "descriptionFr": "Une extension pour l'éditeur de code Vscode qui permet de s'entraîner à améliorer sa vitesse de frappe directement dans l'éditeur. Téléchargé et utilisé régulièrement par 6000+ développeurs."
   },
   {
     "image": "1ptone.png",
@@ -71,13 +71,13 @@
       "Chakra UI"
     ],
     "isSecondary": false,
-    "descriptionFr": "Un outil pour visualiser le sentiment global des utilisateurs de Twitter à propos d’un sujet particulier grâce à une librairie d'intelligence artificelle."
+    "descriptionFr": "Un outil pour visualiser le sentiment global des utilisateurs de Twitter à propos d'un sujet particulier grâce à une librairie d'intelligence artificelle."
   },
   {
     "image": "dailywallpapers.jpeg",
     "icon": "https://i.imgur.com/9MoAHMt.jpeg",
     "title": "Daily wallpapers",
-    "description": "A simple website to navigate through all the top wallpapers posted on Reddit every day.",
+    "description": "A simple website to navigate and download all the top wallpapers posted on Reddit every day.",
     "repoLink": "https://github.com/Jeusto/daily-wallpapers",
     "demoLink": "https://dailywallpapers.jeusto.com/",
     "tags": [
@@ -106,14 +106,28 @@
     "image": "https://i.imgur.com/ds28JNq.jpeg",
     "icon": "streamerislive-icon.png",
     "title": "Streamer is live",
-    "description": "A Chrome extension to quickly check the status of your favorite twitch streamers and get an alert when they go live. (currently outdated)",
+    "description": "A Chrome extension to quickly check the status of your favorite twitch streamers and get an alert when they go live. (currently outdated due to Twitch API changes)",
     "repoLink": "https://github.com/Jeusto/streamer-is-live",
     "tags": [
       "Javascript",
       "Sass"
     ],
     "isSecondary": true,
-    "descriptionFr": "Une extension Chrome pour rapidement vérifier si vos streamers Twitch préférés sont en ligne et obtenir une alerte lorsqu'ils commencent une diffusion. (actuellement obsolète)"
+    "descriptionFr": "Une extension Chrome pour rapidement vérifier si vos streamers Twitch préférés sont en ligne et obtenir une alerte lorsqu'ils commencent une diffusion. (actuellement obsolète à cause des changements de l'API de Twitch)"
+  },
+  {
+    "image": "https://i.imgur.com/zpKHODQ.png",
+    "icon": "ctron-icon.png",
+    "title": "C-tron",
+    "description": "Light cycles game inspired by the movie Tron that can be played in multiplayer over the network. There's a server that handles the game logic and clients simply give inputs and handle the display.",
+    "repoLink": "https://github.com/Jeusto/ctron",
+    "tags": [
+      "C",
+      "Ncurses",
+      "TCP sockets"
+    ],
+    "isSecondary": true,
+    "descriptionFr": "Jeu de lumières inspiré du film Tron qui peut être joué en multijoueur sur le réseau. Il y a un serveur qui gère la logique du jeu et les clients envoient simplement des input et affichent le jeu."
   },
   {
     "image": "https://i.imgur.com/UJZtrF8.jpeg",
@@ -145,9 +159,8 @@
     "image": "https://i.imgur.com/EF1T5zS.jpeg",
     "icon": "jeustocom-icon.png",
     "title": "This website",
-    "description": "First version of this website which can be used as a template.",
+    "description": "First version of my personal website made with Next.js which includes a blog and a portfolio.",
     "repoLink": "https://github.com/Jeusto/personal-website-v1",
-    "demoLink": "https://jeusto.com/",
     "tags": [
       "Typescript",
       "MongoDB",
@@ -155,7 +168,7 @@
       "Chakra UI"
     ],
     "isSecondary": true,
-    "descriptionFr": "Première version de ce site web qui peut être utilise comme modèle."
+    "descriptionFr": "Première version de ce mon site web personnel crée avec Next.js qui inclue un blog et un portfolio."
   },
   {
     "image": "https://i.imgur.com/OSwRuZz.jpeg",
