@@ -7,24 +7,35 @@ import LinkIcon from "./assets/icon-link.svg";
 import GithubIcon from "./assets/icon-github.svg";
 import styles from "./Project.module.css";
 
-export const Project = ({
+export const SecondaryProjectCard = ({
   title,
   description,
-  descriptionFr,
-  image,
+  icon,
   repoLink,
   demoLink,
   tags,
-  isSecondary,
 }) => {
   return (
     <div className={clsx("col col--6", styles.cardContainer)}>
       <div className={clsx("card", styles.card)}>
-        <div className={clsx("card__image", styles.image)}>
-          <Image img={image} alt={"project image"} title={title} />
-        </div>
         <div className="card__body">
-          <h2>{title}</h2>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "left",
+              margin: "0 0 1rem 0",
+            }}
+          >
+            <Image width={"50rem"} img={require(`./assets/projects/${icon}`)} />
+            <h2
+              style={{
+                margin: "0 0 0 1rem",
+              }}
+            >
+              {title}
+            </h2>
+          </div>
           <p>{description}</p>
         </div>
         <div className="card__footer">
