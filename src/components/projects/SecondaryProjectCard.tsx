@@ -6,6 +6,7 @@ import Translate from "@docusaurus/Translate";
 import LinkIcon from "./assets/icon-link.svg";
 import GithubIcon from "./assets/icon-github.svg";
 import styles from "./Project.module.css";
+import type { Project } from "./ProjectList";
 
 export const SecondaryProjectCard = ({
   title,
@@ -14,7 +15,7 @@ export const SecondaryProjectCard = ({
   repoLink,
   demoLink,
   tags,
-}) => {
+}: Project) => {
   return (
     <div className={clsx("col col--6", styles.cardContainer)}>
       <div className={clsx("card", styles.card)}>
@@ -59,9 +60,7 @@ export const SecondaryProjectCard = ({
               <span className="button__icon">
                 <LinkIcon />
               </span>
-              <Translate id="demo-button.text" className="text">
-                Website
-              </Translate>
+              <Translate id="demo-button.text">Website</Translate>
             </a>
           )}
           {repoLink && (
@@ -73,9 +72,7 @@ export const SecondaryProjectCard = ({
               <span className="button__icon">
                 <GithubIcon />
               </span>
-              <Translate id="repository-button.text" className="text">
-                Repository
-              </Translate>
+              <Translate id="repository-button.text">Repository</Translate>
             </a>
           )}
         </div>

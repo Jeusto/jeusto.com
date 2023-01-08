@@ -3,6 +3,7 @@ import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import { translate } from "@docusaurus/Translate";
 import styles from "./styles.module.css";
+
 export default function BlogSidebarDesktop({ sidebar }) {
   return (
     <aside className="col col--2">

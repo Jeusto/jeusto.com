@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "@theme/Layout";
 import { translate } from "@docusaurus/Translate";
 
-import { ProjectsList } from "../components/projects/ProjectsList";
+import { ProjectList } from "../components/projects/ProjectList";
 import projects from "../data/projects.json";
 
 const title = translate({
@@ -20,7 +20,7 @@ export default function Projects() {
   return (
     <Layout title="Projects">
       <main className="container margin-vert--lg">
-        <ProjectsList
+        <ProjectList
           projects={projects}
           maxCount={100}
           showSecondary={true}

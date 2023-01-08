@@ -4,19 +4,40 @@ import { translate } from "@docusaurus/Translate";
 import { MainProjectCard } from "./MainProjectCard";
 import { SecondaryProjectCard } from "./SecondaryProjectCard";
 
+export type Project = {
+  title: string;
+  description: string;
+  descriptionFr?: string;
+  image: string;
+  icon: string;
+  repoLink?: string;
+  demoLink?: string;
+  tags: string[];
+  isSecondary?: boolean;
+};
+
+export type ProjectListProps = {
+  projects: Project[];
+  maxCount?: number;
+  showSecondary?: boolean;
+  useH1Heading?: boolean;
+  title: string;
+  description: string;
+};
+
 const secondaryTitle = translate({
   message: "Other noteworthy projects",
   id: "projects-page.secondary-heading",
 });
 
-export const ProjectsList = ({
+export const ProjectList = ({
   projects,
   maxCount,
   showSecondary,
   useH1Heading,
   title,
   description,
-}) => {
+}: ProjectListProps) => {
   if (maxCount) {
     projects = projects.slice(0, maxCount);
   }

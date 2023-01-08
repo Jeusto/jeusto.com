@@ -24,7 +24,7 @@ export default function FooterWrapper(props) {
           category="General"
           categoryId="DIC_kwDOIrxUAs4CTcO3"
           mapping="title"
-          theme={colorMode}
+          theme={colorMode === "dark" ? "transparent_dark" : "light"}
           reactionsEnabled="0"
           emitMetadata="0"
           inputPosition="top"

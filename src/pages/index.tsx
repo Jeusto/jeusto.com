@@ -3,10 +3,11 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import { translate } from "@docusaurus/Translate";
 import Link from "@docusaurus/Link";
+
 import { AboutMe } from "../components/homepage/AboutMe";
-import { SocialLinks } from "../components/homepage/SocialLinks";
+import { SocialLinkList } from "../components/homepage/SocialLinkList";
 import { Hero } from "../components/homepage/Hero";
-import { ProjectsList } from "../components/projects/ProjectsList";
+import { ProjectList } from "../components/projects/ProjectList";
 
 import projects from "../data/projects.json";
 import avatar from "./assets/index/avatar.png";
@@ -103,8 +104,8 @@ export default function Home() {
       >
         <div className="container padding-vert">
           <AboutMe avatar={avatar} descriptionLines={descriptionLines} />
-          <SocialLinks links={links} />
-          <ProjectsList
+          <SocialLinkList links={links} />
+          <ProjectList
             projects={projects}
             maxCount={6}
             showSecondary={false}
@@ -112,7 +113,7 @@ export default function Home() {
             title={projectsTitle}
             description={projectsDescription}
           />
-          <div class="col text--right">
+          <div className="col text--right">
             <b>
               <Link to="/projects">
                 {translate({
