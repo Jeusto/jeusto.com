@@ -35,10 +35,11 @@ export const SocialLinkList = ({ links }: SocialLinkListProps) => {
       <h2>
         <Translate id="links.heading">A few links</Translate>
       </h2>
-      <div className={clsx("row", styles.socialLinks)}></div>
-      {links.map((link) => (
-        <SocialLink {...link} />
-      ))}
+      <div className={clsx("row", styles.socialLinks)}>
+        {links.map((link) => (
+          <SocialLink {...link} />
+        ))}
+      </div>
     </div>
   );
 };
