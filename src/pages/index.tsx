@@ -39,7 +39,7 @@ const links = [
   },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/jeusto/",
+    url: "https://www.linkedin.com/in/asaday/",
     icon: (
       <svg width="32" height="32" viewBox="0 0 24 24">
         <path

@@ -86,7 +86,7 @@ const config = {
 
               {
                 label: "LinkedIn: @asaday",
-                href: "https://www.linkedin.com/in/asaday/en",
+                href: "https://www.linkedin.com/in/asaday/",
               },
               {
                 label: "Github: @Jeusto",
