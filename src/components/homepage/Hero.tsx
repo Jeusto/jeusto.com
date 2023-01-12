@@ -6,7 +6,7 @@ import styles from "./Hero.module.css";
 
 export const Hero = () => {
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
+    <header className={clsx("hero hero--primary", styles.banner)}>
       <div className="container">
         <h1 className={clsx("hero__title", styles.title)}>
           <Translate id="hero.greetings">Hi. I'm</Translate>

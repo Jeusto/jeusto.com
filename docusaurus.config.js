@@ -38,6 +38,7 @@ const config = {
             type: "all",
             copyright: `Copyright © ${new Date().getFullYear()} Arhun Saday.`,
           },
+          editUrl: "https://github.com/jeusto/jeusto.com/edit/master/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -49,6 +50,10 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      tableOfContents: {
+        minHeadingLevel: 2,
+        maxHeadingLevel: 5,
+      },
       image: "img/meta-image.png",
       colorMode: {
         defaultMode: "dark",
