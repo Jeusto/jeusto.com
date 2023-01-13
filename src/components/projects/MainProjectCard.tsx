@@ -19,7 +19,7 @@ export const MainProjectCard = ({
   tags,
 }: Project) => {
   return (
-    <div className={clsx("col", styles.projectCard)}>
+    <div className={styles.projectCard}>
       <div className={clsx("card", styles.projectCard__inner)}>
         <Image img={require(`./assets/projects/${image}`)} />
         <div className="card__body">

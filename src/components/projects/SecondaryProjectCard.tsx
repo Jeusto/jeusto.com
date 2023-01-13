@@ -17,7 +17,7 @@ export const SecondaryProjectCard = ({
   tags,
 }: Project) => {
   return (
-    <div className={clsx("col", styles.projectCard)}>
+    <div className={styles.projectCard}>
       <div className={clsx("card", styles.projectCard__inner)}>
         <div className="card__body">
           <div className={clsx("", styles.projectCard__bodySecondary)}>
