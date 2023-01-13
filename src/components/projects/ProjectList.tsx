@@ -1,8 +1,7 @@
 import React from "react";
 import { translate } from "@docusaurus/Translate";
 
-import { MainProjectCard } from "./MainProjectCard";
-import { SecondaryProjectCard } from "./SecondaryProjectCard";
+import { ProjectCard } from "./ProjectCard";
 
 export type Project = {
   title: string;
@@ -50,16 +49,15 @@ export const ProjectList = ({
       <p>{description}</p>
       <div className="row">
         {primaryProjects.map((project) => (
-          <MainProjectCard key={project.title} {...project} />
+          <ProjectCard key={project.title} {...project} />
         ))}
       </div>
-
       {showSecondary && (
         <>
           <h1>{secondaryTitle}</h1>
           <div className="row">
             {secondaryProjects.map((project) => (
-              <SecondaryProjectCard key={project.title} {...project} />
+              <ProjectCard key={project.title} {...project} />
             ))}
           </div>
         </>
