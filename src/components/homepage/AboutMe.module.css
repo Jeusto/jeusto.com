@@ -29,3 +29,9 @@
     margin: 0 auto;
   }
 }
+
+.avatarImage {
+  transform: rotate(3deg);
+  border-radius: var(--ifm-card-border-radius);
+  box-shadow: var(--ifm-global-shadow-lw);
+}

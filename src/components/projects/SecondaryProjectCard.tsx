@@ -17,17 +17,10 @@ export const SecondaryProjectCard = ({
   tags,
 }: Project) => {
   return (
-    <div className={clsx("col col--6", styles.cardContainer)}>
-      <div className={clsx("card", styles.card)}>
+    <div className={clsx("col", styles.projectCard)}>
+      <div className={clsx("card", styles.projectCard__inner)}>
         <div className="card__body">
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "left",
-              margin: "0 0 1rem 0",
-            }}
-          >
+          <div className={clsx("", styles.projectCard__bodySecondary)}>
             <Image
               width={50}
               height={50}
@@ -47,15 +40,12 @@ export const SecondaryProjectCard = ({
           </div>
           <p>{description}</p>
         </div>
-        <div className="card__footer">
+        <div className={clsx("card__footer", styles.projectCard__footer)}>
           {demoLink && (
             <a
               href={demoLink}
               target="_blank"
               className="button button--primary button--outline"
-              style={{
-                marginRight: "1rem",
-              }}
             >
               <span className="button__icon">
                 <LinkIcon />

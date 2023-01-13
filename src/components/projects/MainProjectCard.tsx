@@ -19,22 +19,22 @@ export const MainProjectCard = ({
   tags,
 }: Project) => {
   return (
-    <div className={clsx("col col--6", styles.cardContainer)}>
-      <div className={clsx("card", styles.card)}>
+    <div className={clsx("col", styles.projectCard)}>
+      <div className={clsx("card", styles.projectCard__inner)}>
         <Image img={require(`./assets/projects/${image}`)} />
         <div className="card__body">
           <h2>{title}</h2>
           <p>{i18n.currentLocale === "fr" ? descriptionFr : description}</p>
         </div>
-        <div className="card__footer">
+        <div className={clsx("card__footer", styles.projectCard__footer)}>
           {demoLink && (
             <a
               href={demoLink}
               target="_blank"
-              className="button button--primary button--outline"
-              style={{
-                marginRight: "1rem",
-              }}
+              className={clsx(
+                "button button--primary button--outline",
+                styles.project__button
+              )}
             >
               <span className="button__icon">
                 <LinkIcon />
@@ -46,7 +46,10 @@ export const MainProjectCard = ({
             <a
               href={repoLink}
               target="_blank"
-              className="button button--secondary button--outline"
+              className={clsx(
+                "button button--secondary button--outline",
+                styles.project__button
+              )}
             >
               <span className="button__icon">
                 <GithubIcon />

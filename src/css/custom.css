@@ -5,6 +5,7 @@
 :root {
   --ifm-font-family-base: "Inter", sans-serif;
   --ifm-font-family-sans: "Inter", sans-serif;
+  --ifm-footer-padding-vertical: var(--ifm-spacing-horizontal) 0;
   --pk-blue: #0d9488;
   --pk-green: #2dd4bf;
   --ifm-color-primary: #0d9488;
@@ -17,9 +18,6 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-background-color: #f9f9f9;
   --ifm-code-background: #f1f1f1;
-}
-html {
-  background-color: var(--ifm-background-color);
 }
 [data-theme="dark"] {
   --ifm-color-primary: #2dd4bf;
@@ -41,27 +39,33 @@ p {
   font-family: "Literata", serif;
   font-size: 1.1rem;
 }
-article h1{
+article h1 {
   font-size: 2.5rem !important;
 }
 @media (max-width: 576px) {
-  article h1{
+  article h1 {
     font-size: 2rem !important;
   }
 }
-article h2, .markdown > h2 {
+article h2,
+.markdown > h2 {
   font-size: 2rem !important;
 }
 .markdown > h3 {
   font-size: 1.5rem !important;
 }
 @media (max-width: 576px) {
-  article h2, .markdown > h2 {
+  article h2,
+  .markdown > h2 {
     font-size: 1.5rem !important;
   }
   .markdown > h3 {
     font-size: 1.25rem !important;
   }
+}
+nav .clean-list {
+  list-style: square;
+  padding-left: 1rem;
 }
 
 /* Dark mode adjustments */
@@ -69,17 +73,7 @@ article h2, .markdown > h2 {
   border-top: 1px solid var(--ifm-color-emphasis-200);
 }
 
-/* Card and buttons */
-.card__footer {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
-.card__footer .button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+/* Buttons */
 .button__icon {
   width: 18px;
   height: 18px;
@@ -110,9 +104,12 @@ article h2, .markdown > h2 {
 }
 .navbar__inner {
   margin: 0 auto;
-  max-width: var(--ifm-container-width);
+  max-width: var(--ifm-container-width-xl);
   padding: 0 var(--ifm-spacing-horizontal);
   width: 100%;
+}
+.container {
+  max-width: var(--ifm-container-width-xl);
 }
 [data-theme="dark"] .navbar {
   background-color: rgba(36, 37, 38, 0.7);
