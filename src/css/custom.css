@@ -76,13 +76,9 @@ nav .clean-list {
 
 /* Buttons */
 .button__icon {
-  width: 18px;
-  height: 18px;
-  display: inline-block;
   margin-right: 0.5rem;
-  position: relative;
-  top: -3px;
   fill: var(--ifm-button-color);
+  display: inline-flex;
 }
 .button--secondary .button__icon {
   fill: var(--ifm-color-gray-900);

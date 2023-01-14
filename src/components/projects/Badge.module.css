@@ -1,0 +1,101 @@
+.badge {
+  font-size: 12px;
+  height: 24px;
+  line-height: 18px;
+  text-decoration: none;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  border-radius: 4px;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+  cursor: inherit;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.badge {
+  background: hsl(0, 0%, 93%);
+  color: hsl(0, 0%, 23%);
+}
+[data-theme="dark"] .badge {
+  background: hsla(0, 0%, 94%, 0.15);
+  color: hsl(0, 0%, 95%);
+}
+
+.react {
+  background: hsla(190, 80%, 60%, 0.3);
+  color: hsl(190, 81%, 21%);
+}
+.typescript {
+  background: hsla(211, 61%, 46%, 0.3);
+  color: hsl(211, 74%, 26%);
+}
+.javascript {
+  background: hsla(52, 78%, 61%, 0.5);
+  color: rgb(102, 89, 3);
+}
+.python {
+  background: hsla(45, 87%, 59%, 0.5);
+  color: hsl(45, 78%, 23%);
+}
+.java {
+  background: hsla(359, 84%, 53%, 0.3);
+  color: rgb(145, 15, 17);
+}
+.php {
+  background: hsla(236, 53%, 64%, 0.3);
+  color: rgb(58, 60, 94);
+}
+.mongodb {
+  background: hsla(111, 47%, 46%, 0.3);
+  color: rgb(34, 99, 22);
+}
+.sass {
+  background: hsla(331, 47%, 59%, 0.3);
+  color: rgb(110, 37, 73);
+}
+.c {
+  background: hsla(206, 100%, 29%, 0.3);
+  color: hsl(206, 98%, 24%);
+}
+
+[data-theme="dark"] .react {
+  background: hsla(190, 80%, 60%, 0.3);
+  color: hsl(190, 100%, 81%);
+}
+[data-theme="dark"] .typescript {
+  background: hsla(211, 61%, 46%, 0.3);
+  color: hsl(211, 100%, 86%);
+}
+[data-theme="dark"] .javascript {
+  background: hsla(52, 51%, 43%, 0.5);
+  color: hsl(52, 100%, 81%);
+}
+[data-theme="dark"] .python {
+  background: hsla(45, 61%, 45%, 0.5);
+  color: hsl(45, 89%, 82%);
+}
+[data-theme="dark"] .java {
+  background: hsla(359, 65%, 45%, 0.3);
+  color: hsl(359, 100%, 83%);
+}
+[data-theme="dark"] .php {
+  background: hsla(236, 53%, 64%, 0.3);
+  color: hsl(236, 100%, 84%);
+}
+[data-theme="dark"] .mongodb {
+  background: hsla(111, 47%, 34%, 0.3);
+  color: hsl(112, 73%, 78%);
+}
+[data-theme="dark"] .sass {
+  background: hsla(331, 47%, 59%, 0.3);
+  color: hsl(331, 83%, 84%);
+}
+[data-theme="dark"] .c {
+  background: hsla(206, 80%, 34%, 0.3);
+  color: hsl(206, 76%, 60%);
+}

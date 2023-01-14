@@ -4,8 +4,8 @@ import Image from "@theme/IdealImage";
 import Translate from "@docusaurus/Translate";
 import i18n from "@generated/i18n";
 
-import LinkIcon from "./assets/icon-link.svg";
-import GithubIcon from "./assets/icon-github.svg";
+import { Badge } from "./Badge";
+import { FiExternalLink, FiGithub } from "react-icons/fi";
 import styles from "./Project.module.css";
 import type { Project } from "./ProjectList";
 
@@ -18,7 +18,7 @@ type ProjectCardButtonProps = {
 
 type ProjectCardMainProps = Pick<
   Project,
-  "isSecondary" | "image" | "title" | "description" | "descriptionFr"
+  "isSecondary" | "image" | "title" | "description" | "descriptionFr" | "tags"
 >;
 
 export const ProjectCard = ({
@@ -41,24 +41,37 @@ export const ProjectCard = ({
           title={title}
           description={description}
           descriptionFr={descriptionFr}
+          tags={tags}
         />
         <div className={clsx("card__footer", styles.footer)}>
-          {demoLink &&
-            ProjectCardButton({
-              link: demoLink,
-              linkType: "website",
-              icon: <LinkIcon />,
-              text: "Website",
-            })}
-          {repoLink &&
-            ProjectCardButton({
-              link: repoLink,
-              linkType: "repository",
-              icon: <GithubIcon />,
-              text: "Repository",
-            })}
+          {demoLink && (
+            <ProjectCardButton
+              link={demoLink}
+              linkType="website"
+              icon={<FiExternalLink size="20" />}
+              text="Website"
+            />
+          )}
+          {repoLink && (
+            <ProjectCardButton
+              link={repoLink}
+              linkType="repository"
+              icon={<FiGithub size="20" />}
+              text="Repository"
+            />
+          )}
         </div>
       </div>
+    </div>
+  );
+};
+
+const ProjectCardTags = ({ tags }: { tags: string[] }) => {
+  return (
+    <div className={styles.tags}>
+      {tags.map((tag) => (
+        <Badge key={tag} text={tag} />
+      ))}
     </div>
   );
 };
@@ -69,27 +82,28 @@ const ProjectCardMain = ({
   title,
   description,
   descriptionFr,
+  tags,
 }: ProjectCardMainProps) => {
   return isSecondary ? (
-    <>
-      <div className="card__body">
-        <div className={styles.secondaryBody}>
-          <Image
-            width={50}
-            height={50}
-            img={require(`./assets/projects/${image}`)}
-            className={styles.secondaryImage}
-          />
-          <h2 className={styles.secondaryTitle}>{title}</h2>
-        </div>
-        <p>{description}</p>
+    <div className="card__body">
+      <div className={styles.secondaryBody}>
+        <Image
+          width={50}
+          height={50}
+          img={require(`./assets/projects/${image}`)}
+          className={styles.secondaryImage}
+        />
+        <h2 className={styles.secondaryTitle}>{title}</h2>
       </div>
-    </>
+      <ProjectCardTags tags={tags} />
+      <p>{description}</p>
+    </div>
   ) : (
     <>
-      <Image img={require(`./assets/projects/${image}`)} />
+      <Image class={styles.image} img={require(`./assets/projects/${image}`)} />
       <div className="card__body">
         <h2>{title}</h2>
+        <ProjectCardTags tags={tags} />
         <p>{i18n.currentLocale === "fr" ? descriptionFr : description}</p>
       </div>
     </>
@@ -113,7 +127,13 @@ const ProjectCardButton = ({
       )}
     >
       <span className="button__icon">{icon}</span>
-      <Translate id="repository-button.text">{text}</Translate>
+      <Translate
+        id={
+          linkType === "website" ? "demo-button.text" : "repository-button.text"
+        }
+      >
+        {text}
+      </Translate>
     </a>
   );
 };

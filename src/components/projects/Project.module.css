@@ -21,10 +21,31 @@
   border: 1px solid var(--ifm-color-emphasis-200);
   height: 100%;
 }
+.image {
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  /* border-radius: calc(var(--ifm-card-border-radius) / 1.5);
+  margin: calc(var(--ifm-spacing-horizontal) / 1.5);
+  margin-bottom: 0;
+  border: 1px solid var(--ifm-color-emphasis-200); */
+}
 .button {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 8px 16px;
+}
+.button__icon {
+  display: none;
+  vertical-align: top;
+}
+.tags {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+  grid-gap: 0.5rem;
+  gap: 0.5rem;
 }
 
 .secondaryTitle {

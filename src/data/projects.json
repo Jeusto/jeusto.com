@@ -66,9 +66,9 @@
     "demoLink": "https://twitteropinion.jeusto.com",
     "tags": [
       "Python",
-      "Next.js",
+      "NextJS",
       "Flask",
-      "Chakra UI"
+      "ChakraUI"
     ],
     "isSecondary": false,
     "descriptionFr": "Un outil pour visualiser le sentiment global des utilisateurs de Twitter à propos d'un sujet particulier grâce à une librairie d'intelligence artificelle."
@@ -164,8 +164,8 @@
     "tags": [
       "Typescript",
       "MongoDB",
-      "Next.js",
-      "Chakra UI"
+      "NextJS",
+      "ChakraUI"
     ],
     "isSecondary": true,
     "descriptionFr": "Première version de ce mon site web personnel crée avec Next.js qui inclue un blog et un portfolio."
