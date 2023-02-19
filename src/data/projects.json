@@ -6,10 +6,7 @@
     "description": "An extension for the code editor Vscode to practice and improve your typing speed right inside your editor. Downloaded and regularly used by 6000+ developers.",
     "repoLink": "https://github.com/Jeusto/vscode-typing-test",
     "demoLink": "https://warmup.jeusto.com/",
-    "tags": [
-      "Typescript",
-      "Vscode extension"
-    ],
+    "tags": ["Typescript", "Vscode extension"],
     "isSecondary": false,
     "descriptionFr": "Une extension pour l'éditeur de code Vscode qui permet de s'entraîner à améliorer sa vitesse de frappe directement dans l'éditeur. Téléchargé et utilisé régulièrement par 6000+ développeurs."
   },
@@ -20,11 +17,7 @@
     "description": "A minimalistic website to shorten website URLs and keep track of the number of visits. There's also a documented and free to use API. More than 5000 visits per month for all the shortened URLs.",
     "repoLink": "https://github.com/Jeusto/1pt.one",
     "demoLink": "http://1pt.one/",
-    "tags": [
-      "Python",
-      "MongoDB",
-      "Flask"
-    ],
+    "tags": ["Python", "MongoDB", "Flask"],
     "isSecondary": false,
     "descriptionFr": "Un site minimaliste pour raccourcir des URLs de sites web et suivre le nombre de visites. Il y a également une API documentée et gratuit d'utilisation. Plus de 5000 visites par mois pour l'ensemble des liens raccourcis."
   },
@@ -35,10 +28,7 @@
     "description": "A crossplatform desktop application to download and read free books offered by \"Project Gutenberg\". You can also annotate, take notes, get the definition of a word, etc.",
     "repoLink": "https://github.com/Jeusto/book-reader-java-project",
     "demoLink": "",
-    "tags": [
-      "Java",
-      "Java swing"
-    ],
+    "tags": ["Java", "Java swing"],
     "isSecondary": false,
     "descriptionFr": "Une application de bureau multi-plateformes qui permet de télécharger et lire des livres gratuits offert par \"Project Gutenberg\". Vous pouvez également annoter, prendre des notes, obtenir la définition d'un mot, etc."
   },
@@ -49,11 +39,7 @@
     "description": "A multiplayer quiz web application with rooms to play with your friends. Real-time games, with a choice of more than 20 categories of questions and over 4000 questions.",
     "repoLink": "https://github.com/Jeusto/trivia-ten",
     "demoLink": "http://triviaten.jeusto.com/",
-    "tags": [
-      "Javascript",
-      "Socket.io",
-      "Express"
-    ],
+    "tags": ["Javascript", "Socket.io", "Express"],
     "isSecondary": false,
     "descriptionFr": "Une application web de quiz multijoueur avec des salons pour jouer avec ses amis. Parties en temps réel, avec un choix parmi plus de 20 catégories de questions et plus de 4000 questions."
   },
@@ -64,12 +50,7 @@
     "description": "A tool to visualize the average sentiment of Twitter users about a specific subject using a natural language processing library.",
     "repoLink": "https://github.com/Jeusto/twitter-opinion-frontend",
     "demoLink": "https://twitteropinion.jeusto.com",
-    "tags": [
-      "Python",
-      "NextJS",
-      "Flask",
-      "ChakraUI"
-    ],
+    "tags": ["Python", "NextJS", "Flask", "ChakraUI"],
     "isSecondary": false,
     "descriptionFr": "Un outil pour visualiser le sentiment global des utilisateurs de Twitter à propos d'un sujet particulier grâce à une librairie d'intelligence artificelle."
   },
@@ -80,10 +61,7 @@
     "description": "A simple website to navigate and download all the top wallpapers posted on Reddit every day.",
     "repoLink": "https://github.com/Jeusto/daily-wallpapers",
     "demoLink": "https://dailywallpapers.jeusto.com/",
-    "tags": [
-      "React",
-      "Styled components"
-    ],
+    "tags": ["React", "Styled components"],
     "isSecondary": false,
     "descriptionFr": "Un simple site web pour trier, parcourir et télécharger les meilleurs fonds d'écran postés sur le réseau social Reddit chaque jour."
   },
@@ -93,12 +71,7 @@
     "title": "Fresh & flesh",
     "description": "A recipe sharing website with a backend and a database that includes several features like language selection, uploading content via a form, bookmarking etc.",
     "repoLink": "https://github.com/Jeusto/zombie-recipes",
-    "demoLink": "https://freshflesh.000webhostapp.com/",
-    "tags": [
-      "Php",
-      "Sass",
-      "Sqlite"
-    ],
+    "tags": ["Php", "Sass", "Sqlite"],
     "isSecondary": true,
     "descriptionFr": "Un site web de partage de recettes avec un backend et une base de données qui comprend plusieurs fonctionnalités comme le choix de langue, mise en ligne de contenu via un formulaire, mettre en favoris etc."
   },
@@ -108,10 +81,7 @@
     "title": "Streamer is live",
     "description": "A Chrome extension to quickly check the status of your favorite twitch streamers and get an alert when they go live. (currently outdated due to Twitch API changes)",
     "repoLink": "https://github.com/Jeusto/streamer-is-live",
-    "tags": [
-      "Javascript",
-      "Sass"
-    ],
+    "tags": ["Javascript", "Sass"],
     "isSecondary": true,
     "descriptionFr": "Une extension Chrome pour rapidement vérifier si vos streamers Twitch préférés sont en ligne et obtenir une alerte lorsqu'ils commencent une diffusion. (actuellement obsolète à cause des changements de l'API de Twitch)"
   },
@@ -121,11 +91,7 @@
     "title": "C-tron",
     "description": "Light cycles game inspired by the movie Tron that can be played in multiplayer over the network. There's a server that handles the game logic and clients simply give inputs and handle the display.",
     "repoLink": "https://github.com/Jeusto/ctron",
-    "tags": [
-      "C",
-      "Ncurses",
-      "TCP sockets"
-    ],
+    "tags": ["C", "Ncurses", "TCP sockets"],
     "isSecondary": true,
     "descriptionFr": "Jeu de lumières inspiré du film Tron qui peut être joué en multijoueur sur le réseau. Il y a un serveur qui gère la logique du jeu et les clients envoient simplement des input et affichent le jeu."
   },
@@ -136,9 +102,7 @@
     "description": "A productivity web app combining a countdown and a task list to use the Pomodoro technique.",
     "repoLink": "https://github.com/Jeusto/tomotasks",
     "demoLink": "https://tomotasks.jeusto.com/",
-    "tags": [
-      "React"
-    ],
+    "tags": ["React"],
     "isSecondary": true,
     "descriptionFr": "Une application web de productivité combinant un compte à rebours et une liste de tâches pour utiliser la technique Pomodoro."
   },
@@ -149,9 +113,7 @@
     "description": "A dark theme for Visual Studio Code inspired by the online code editor \"Codesandbox\" and based on the \"One Dark Pro\" theme.",
     "repoLink": "https://github.com/Jeusto/one-sandbox-theme",
     "demoLink": "https://marketplace.visualstudio.com/items?itemName=Jeusto.one-sandbox",
-    "tags": [
-      "Vscode extension"
-    ],
+    "tags": ["Vscode extension"],
     "isSecondary": true,
     "descriptionFr": "Un thème sombre pour Visual Studio Code inspiré par l'éditeur de code en ligne \"Codesandbox\" et basé sur le thème \"One Dark Pro\"."
   },
@@ -161,12 +123,7 @@
     "title": "Personal website",
     "description": "First version of my personal website made with Next.js which includes a blog and a portfolio.",
     "repoLink": "https://github.com/Jeusto/personal-website-v1",
-    "tags": [
-      "Typescript",
-      "MongoDB",
-      "NextJS",
-      "ChakraUI"
-    ],
+    "tags": ["Typescript", "MongoDB", "NextJS", "ChakraUI"],
     "isSecondary": true,
     "descriptionFr": "Première version de ce mon site web personnel crée avec Next.js qui inclue un blog et un portfolio."
   },
@@ -177,9 +134,7 @@
     "description": "John Conway's game of life made with React. Create an initial configuration and observe how it evolves.",
     "repoLink": "https://github.com/Jeusto/game-of-life",
     "demoLink": "https://gameoflife.jeusto.com/",
-    "tags": [
-      "React"
-    ],
+    "tags": ["React"],
     "isSecondary": true,
     "descriptionFr": "Le jeu de la vie de John Conway réalisé avec React. Créez une configuration initiale et observez son évolution."
   }
