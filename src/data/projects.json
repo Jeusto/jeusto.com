@@ -66,14 +66,25 @@
     "descriptionFr": "Un simple site web pour trier, parcourir et télécharger les meilleurs fonds d'écran postés sur le réseau social Reddit chaque jour."
   },
   {
-    "image": "https://i.imgur.com/2WSZ8YH.jpeg",
-    "icon": "freshflesh-icon.png",
-    "title": "Fresh & flesh",
-    "description": "A recipe sharing website with a backend and a database that includes several features like language selection, uploading content via a form, bookmarking etc.",
-    "repoLink": "https://github.com/Jeusto/zombie-recipes",
-    "tags": ["Php", "Sass", "Sqlite"],
+    "image": "https://i.imgur.com/zpKHODQ.png",
+    "icon": "ctron-icon.png",
+    "title": "C-tron",
+    "description": "Light cycles game inspired by the movie Tron that can be played in multiplayer over the network. There's a server that handles the game logic and clients simply give inputs and handle the display.",
+    "repoLink": "https://github.com/Jeusto/ctron",
+    "tags": ["C", "Ncurses", "TCP sockets"],
     "isSecondary": true,
-    "descriptionFr": "Un site web de partage de recettes avec un backend et une base de données qui comprend plusieurs fonctionnalités comme le choix de langue, mise en ligne de contenu via un formulaire, mettre en favoris etc."
+    "descriptionFr": "Jeu de lumières inspiré du film Tron qui peut être joué en multijoueur sur le réseau. Il y a un serveur qui gère la logique du jeu et les clients envoient simplement des input et affichent le jeu."
+  },
+  {
+    "image": "https://i.imgur.com/SfH8iVz.png",
+    "icon": "1ptone-cli-icon.png",
+    "title": "1.1 CLI",
+    "description": "A CLI tool to use the minimalistic 1pt.one URL shortener from the terminal. (not published to Npm yet)",
+    "repoLink": "https://github.com/Jeusto/1pt.one-cli",
+    "demoLink": "",
+    "tags": ["Typescript", "Jest", "Commander", "Chalk"],
+    "isSecondary": true,
+    "descriptionFr": "Un outil CLI pour utiliser le raccourcisseur d'URL minimaliste 1pt.one depuis le terminal. (pas encore publié sur Npm)"
   },
   {
     "image": "https://i.imgur.com/ds28JNq.jpeg",
@@ -84,16 +95,6 @@
     "tags": ["Javascript", "Sass"],
     "isSecondary": true,
     "descriptionFr": "Une extension Chrome pour rapidement vérifier si vos streamers Twitch préférés sont en ligne et obtenir une alerte lorsqu'ils commencent une diffusion. (actuellement obsolète à cause des changements de l'API de Twitch)"
-  },
-  {
-    "image": "https://i.imgur.com/zpKHODQ.png",
-    "icon": "ctron-icon.png",
-    "title": "C-tron",
-    "description": "Light cycles game inspired by the movie Tron that can be played in multiplayer over the network. There's a server that handles the game logic and clients simply give inputs and handle the display.",
-    "repoLink": "https://github.com/Jeusto/ctron",
-    "tags": ["C", "Ncurses", "TCP sockets"],
-    "isSecondary": true,
-    "descriptionFr": "Jeu de lumières inspiré du film Tron qui peut être joué en multijoueur sur le réseau. Il y a un serveur qui gère la logique du jeu et les clients envoient simplement des input et affichent le jeu."
   },
   {
     "image": "https://i.imgur.com/UJZtrF8.jpeg",
@@ -116,6 +117,16 @@
     "tags": ["Vscode extension"],
     "isSecondary": true,
     "descriptionFr": "Un thème sombre pour Visual Studio Code inspiré par l'éditeur de code en ligne \"Codesandbox\" et basé sur le thème \"One Dark Pro\"."
+  },
+  {
+    "image": "https://i.imgur.com/2WSZ8YH.jpeg",
+    "icon": "freshflesh-icon.png",
+    "title": "Fresh & flesh",
+    "description": "A recipe sharing website with a backend and a database that includes several features like language selection, uploading content via a form, bookmarking etc.",
+    "repoLink": "https://github.com/Jeusto/zombie-recipes",
+    "tags": ["Php", "Sass", "Sqlite"],
+    "isSecondary": true,
+    "descriptionFr": "Un site web de partage de recettes avec un backend et une base de données qui comprend plusieurs fonctionnalités comme le choix de langue, mise en ligne de contenu via un formulaire, mettre en favoris etc."
   },
   {
     "image": "https://i.imgur.com/EF1T5zS.jpeg",

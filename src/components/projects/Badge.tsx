@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import React from "react";
 import { IconContext } from "react-icons";
+import { FaJava } from "react-icons/fa";
 import {
   SiTypescript,
   SiJavascript,
@@ -8,7 +9,6 @@ import {
   SiFlask,
   SiPhp,
   SiPython,
-  SiJava,
   SiSass,
   SiSqlite,
   SiReact,
@@ -28,7 +28,7 @@ const knownTags = [
   { name: "Typescript", colorScheme: "blue", icon: <SiTypescript /> },
   { name: "Javascript", colorScheme: "yellow", icon: <SiJavascript /> },
   { name: "Python", colorScheme: "yellow", icon: <SiPython /> },
-  { name: "Java", colorScheme: "red", icon: <SiJava /> },
+  { name: "Java", colorScheme: "red", icon: <FaJava /> },
   { name: "MongoDB", colorScheme: "green", icon: <SiMongodb /> },
   { name: "Flask", colorScheme: "gray", icon: <SiFlask /> },
   { name: "C", colorScheme: "gray", icon: <SiC /> },
