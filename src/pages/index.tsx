@@ -75,7 +75,7 @@ export default function Home() {
           <SocialLinkList links={links} />
           <ProjectList
             projects={projects}
-            maxCount={6}
+            maxCount={9}
             showSecondary={false}
             useH1Heading={false}
             title={projectsTitle}

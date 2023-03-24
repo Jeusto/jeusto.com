@@ -3,23 +3,23 @@
     "image": "warmup.png",
     "icon": "https://i.imgur.com/q3PDo4X.jpeg",
     "title": "Warm Up",
-    "description": "An extension for the code editor Vscode to practice and improve your typing speed right inside your editor. Downloaded and regularly used by 6000+ developers.",
+    "description": "An extension for the code editor Vscode to practice and improve your typing speed right inside your editor. Downloaded and regularly used by 6500+ developers.",
     "repoLink": "https://github.com/Jeusto/vscode-typing-test",
     "demoLink": "https://warmup.jeusto.com/",
     "tags": ["Typescript", "Vscode extension"],
     "isSecondary": false,
-    "descriptionFr": "Une extension pour l'éditeur de code Vscode qui permet de s'entraîner à améliorer sa vitesse de frappe directement dans l'éditeur. Téléchargé et utilisé régulièrement par 6000+ développeurs."
+    "descriptionFr": "Une extension pour l'éditeur de code Vscode qui permet de s'entraîner à améliorer sa vitesse de frappe directement dans l'éditeur. Téléchargé et utilisé régulièrement par 6500+ développeurs."
   },
   {
     "image": "1ptone.png",
     "icon": "https://i.imgur.com/xwcKtrs.png",
     "title": "1pt.one",
-    "description": "A minimalistic website to shorten website URLs and keep track of the number of visits. There's also a documented and free to use API. More than 5000 visits per month for all the shortened URLs.",
+    "description": "A minimalistic website to shorten website URLs and keep track of the number of visits. There's also a documented and free to use API. More than 4000 visits per month for all the shortened URLs.",
     "repoLink": "https://github.com/Jeusto/1pt.one",
     "demoLink": "http://1pt.one/",
     "tags": ["Python", "MongoDB", "Flask"],
     "isSecondary": false,
-    "descriptionFr": "Un site minimaliste pour raccourcir des URLs de sites web et suivre le nombre de visites. Il y a également une API documentée et gratuit d'utilisation. Plus de 5000 visites par mois pour l'ensemble des liens raccourcis."
+    "descriptionFr": "Un site minimaliste pour raccourcir des URLs de sites web et suivre le nombre de visites. Il y a également une API documentée et gratuit d'utilisation. Plus de 4000 visites par mois pour l'ensemble des liens raccourcis."
   },
   {
     "image": "candle.jpg",
@@ -42,6 +42,28 @@
     "tags": ["Javascript", "Socket.io", "Express"],
     "isSecondary": false,
     "descriptionFr": "Une application web de quiz multijoueur avec des salons pour jouer avec ses amis. Parties en temps réel, avec un choix parmi plus de 20 catégories de questions et plus de 4000 questions."
+  },
+  {
+    "image": "1ptone-cli.png",
+    "icon": "1ptone-cli-icon.png",
+    "title": "1.1 CLI",
+    "description": "A CLI tool to use the minimalistic 1pt.one URL shortener from the terminal. (not published to Npm yet)",
+    "repoLink": "https://github.com/Jeusto/1pt.one-cli",
+    "demoLink": "",
+    "tags": ["Typescript", "Jest", "Commander", "Chalk"],
+    "isSecondary": false,
+    "descriptionFr": "Un outil CLI pour utiliser le raccourcisseur d'URL minimaliste 1pt.one depuis le terminal. (pas encore publié sur Npm)"
+  },
+  {
+    "image": "quickjot.png",
+    "icon": "quickjot-icon.png",
+    "title": "QuickJot",
+    "description": "Proof of concept for an entirely client-side web app that uses the URL to store the state. Example with a text editor.",
+    "repoLink": "https://github.com/Jeusto/1pt.one-cli",
+    "demoLink": "http://quickjot.jeusto.com/",
+    "tags": ["Typescript", "Mantine", "Taptap"],
+    "isSecondary": false,
+    "descriptionFr": "Preuve de concept pour une application web entièrement côté client qui utilise l'URL pour stocker l'état. Exemple avec un éditeur de texte."
   },
   {
     "image": "twittersopinion.jpeg",
@@ -74,17 +96,6 @@
     "tags": ["C", "Ncurses", "TCP sockets"],
     "isSecondary": true,
     "descriptionFr": "Jeu de lumières inspiré du film Tron qui peut être joué en multijoueur sur le réseau. Il y a un serveur qui gère la logique du jeu et les clients envoient simplement des input et affichent le jeu."
-  },
-  {
-    "image": "https://i.imgur.com/SfH8iVz.png",
-    "icon": "1ptone-cli-icon.png",
-    "title": "1.1 CLI",
-    "description": "A CLI tool to use the minimalistic 1pt.one URL shortener from the terminal. (not published to Npm yet)",
-    "repoLink": "https://github.com/Jeusto/1pt.one-cli",
-    "demoLink": "",
-    "tags": ["Typescript", "Jest", "Commander", "Chalk"],
-    "isSecondary": true,
-    "descriptionFr": "Un outil CLI pour utiliser le raccourcisseur d'URL minimaliste 1pt.one depuis le terminal. (pas encore publié sur Npm)"
   },
   {
     "image": "https://i.imgur.com/ds28JNq.jpeg",
