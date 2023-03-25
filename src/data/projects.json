@@ -44,6 +44,17 @@
     "descriptionFr": "Une application web de quiz multijoueur avec des salons pour jouer avec ses amis. Parties en temps réel, avec un choix parmi plus de 20 catégories de questions et plus de 4000 questions."
   },
   {
+    "image": "quickjot.png",
+    "icon": "quickjot-icon.png",
+    "title": "QuickJot",
+    "description": "Proof of concept for an entirely client-side web app that uses the URL to store the state. Example with a text editor.",
+    "repoLink": "https://github.com/Jeusto/quickjot",
+    "demoLink": "http://quickjot.jeusto.com/",
+    "tags": ["Typescript", "Mantine", "Taptap"],
+    "isSecondary": false,
+    "descriptionFr": "Preuve de concept pour une application web entièrement côté client qui utilise l'URL pour stocker l'état. Exemple avec un éditeur de texte."
+  },
+  {
     "image": "1ptone-cli.png",
     "icon": "1ptone-cli-icon.png",
     "title": "1.1 CLI",
@@ -53,17 +64,6 @@
     "tags": ["Typescript", "Jest", "Commander", "Chalk"],
     "isSecondary": false,
     "descriptionFr": "Un outil CLI pour utiliser le raccourcisseur d'URL minimaliste 1pt.one depuis le terminal. (pas encore publié sur Npm)"
-  },
-  {
-    "image": "quickjot.png",
-    "icon": "quickjot-icon.png",
-    "title": "QuickJot",
-    "description": "Proof of concept for an entirely client-side web app that uses the URL to store the state. Example with a text editor.",
-    "repoLink": "https://github.com/Jeusto/1pt.one-cli",
-    "demoLink": "http://quickjot.jeusto.com/",
-    "tags": ["Typescript", "Mantine", "Taptap"],
-    "isSecondary": false,
-    "descriptionFr": "Preuve de concept pour une application web entièrement côté client qui utilise l'URL pour stocker l'état. Exemple avec un éditeur de texte."
   },
   {
     "image": "twittersopinion.jpeg",
