@@ -96,7 +96,7 @@ const ProjectCardMain = ({
         <h2 className={styles.secondaryTitle}>{title}</h2>
       </div>
       <ProjectCardTags tags={tags} />
-      <p>{description}</p>
+      <p>{i18n.currentLocale === "fr" ? descriptionFr : description}</p>
     </div>
   ) : (
     <>
