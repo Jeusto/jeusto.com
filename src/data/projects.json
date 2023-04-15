@@ -57,7 +57,7 @@
   {
     "image": "1ptone-cli.png",
     "icon": "1ptone-cli-icon.png",
-    "title": "1.1 CLI",
+    "title": "1pt.one CLI",
     "description": "A CLI tool to use the minimalistic 1pt.one URL shortener from the terminal. (not published to Npm yet)",
     "repoLink": "https://github.com/Jeusto/1pt.one-cli",
     "demoLink": "",
@@ -66,36 +66,36 @@
     "descriptionFr": "Un outil CLI pour utiliser le raccourcisseur d'URL minimaliste 1pt.one depuis le terminal. (pas encore publié sur Npm)"
   },
   {
-    "image": "twittersopinion.jpeg",
-    "icon": "https://i.imgur.com/Z2qIjKS.jpeg",
-    "title": "Twitter's opinion",
-    "description": "A tool to visualize the average sentiment of Twitter users about a specific subject using a natural language processing library.",
-    "repoLink": "https://github.com/Jeusto/twitter-opinion-frontend",
-    "demoLink": "https://twitteropinion.jeusto.com",
-    "tags": ["Python", "NextJS", "Flask", "ChakraUI"],
-    "isSecondary": false,
-    "descriptionFr": "Un outil pour visualiser le sentiment global des utilisateurs de Twitter à propos d'un sujet particulier grâce à une librairie d'intelligence artificelle."
+    "image": "https://i.imgur.com/zpKHODQ.png",
+    "icon": "ctron-icon.png",
+    "title": "C-tron",
+    "description": "CLI Light cycles game inspired by the movie Tron that can be played in multiplayer over the network. There's a server that handles the game logic and clients simply give inputs and handle the display.",
+    "repoLink": "https://github.com/Jeusto/ctron",
+    "tags": ["C", "Ncurses", "TCP sockets"],
+    "isSecondary": true,
+    "descriptionFr": "Jeu de lumières dans le terminal inspiré du film Tron qui peut être joué en multijoueur sur le réseau. Il y a un serveur qui gère la logique du jeu et les clients envoient simplement des input et affichent le jeu."
   },
   {
-    "image": "dailywallpapers.jpeg",
-    "icon": "https://i.imgur.com/9MoAHMt.jpeg",
+    "image": "https://i.imgur.com/9MoAHMt.jpeg",
+    "icon": "dailywallpapers.png",
     "title": "Daily wallpapers",
     "description": "A simple website to navigate and download all the top wallpapers posted on Reddit every day.",
     "repoLink": "https://github.com/Jeusto/daily-wallpapers",
     "demoLink": "https://dailywallpapers.jeusto.com/",
     "tags": ["React", "Styled components"],
-    "isSecondary": false,
+    "isSecondary": true,
     "descriptionFr": "Un simple site web pour trier, parcourir et télécharger les meilleurs fonds d'écran postés sur le réseau social Reddit chaque jour."
   },
   {
-    "image": "https://i.imgur.com/zpKHODQ.png",
-    "icon": "ctron-icon.png",
-    "title": "C-tron",
-    "description": "Light cycles game inspired by the movie Tron that can be played in multiplayer over the network. There's a server that handles the game logic and clients simply give inputs and handle the display.",
-    "repoLink": "https://github.com/Jeusto/ctron",
-    "tags": ["C", "Ncurses", "TCP sockets"],
+    "image": "https://i.imgur.com/Z2qIjKS.jpeg",
+    "icon": "twittersopinion.png",
+    "title": "Twitter's opinion",
+    "description": "A tool to visualize the average sentiment of Twitter users about a specific subject. (demo disabled because the new Twitter api requires a $100 per month subscription)",
+    "repoLink": "https://github.com/Jeusto/twitter-opinion-frontend",
+    "demoLink": "",
+    "tags": ["Python", "NextJS", "Flask", "ChakraUI"],
     "isSecondary": true,
-    "descriptionFr": "Jeu de lumières inspiré du film Tron qui peut être joué en multijoueur sur le réseau. Il y a un serveur qui gère la logique du jeu et les clients envoient simplement des input et affichent le jeu."
+    "descriptionFr": "Un outil pour visualiser le sentiment global des utilisateurs de Twitter à propos d'un sujet particulier. (démo désactivée car la nouvelle api Twitter nécessite un abonnement de 100$ par mois)"
   },
   {
     "image": "https://i.imgur.com/ds28JNq.jpeg",
