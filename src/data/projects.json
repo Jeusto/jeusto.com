@@ -58,12 +58,12 @@
     "image": "1ptone-cli.png",
     "icon": "1ptone-cli-icon.png",
     "title": "1pt.one CLI",
-    "description": "A CLI tool to use the minimalistic 1pt.one URL shortener from the terminal. (not published to Npm yet)",
+    "description": "A CLI tool to use the minimalistic 1pt.one URL shortener from the terminal.",
     "repoLink": "https://github.com/Jeusto/1pt.one-cli",
-    "demoLink": "",
+    "demoLink": "https://www.npmjs.com/package/1.1-cli",
     "tags": ["Typescript", "Jest", "Commander", "Chalk"],
     "isSecondary": false,
-    "descriptionFr": "Un outil CLI pour utiliser le raccourcisseur d'URL minimaliste 1pt.one depuis le terminal. (pas encore publié sur Npm)"
+    "descriptionFr": "Un outil CLI pour utiliser le raccourcisseur d'URL minimaliste 1pt.one depuis le terminal."
   },
   {
     "image": "https://i.imgur.com/zpKHODQ.png",
