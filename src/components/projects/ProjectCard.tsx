@@ -18,7 +18,13 @@ type ProjectCardButtonProps = {
 
 type ProjectCardMainProps = Pick<
   Project,
-  "isSecondary" | "image" | "title" | "description" | "descriptionFr" | "tags"
+  | "isSecondary"
+  | "image"
+  | "icon"
+  | "title"
+  | "description"
+  | "descriptionFr"
+  | "tags"
 >;
 
 export const ProjectCard = ({
@@ -37,7 +43,8 @@ export const ProjectCard = ({
       <div className={clsx("card", styles.innerCard)}>
         <ProjectCardMain
           isSecondary={isSecondary}
-          image={isSecondary ? icon : image}
+          image={image}
+          icon={icon}
           title={title}
           description={description}
           descriptionFr={descriptionFr}
@@ -79,6 +86,7 @@ const ProjectCardTags = ({ tags }: { tags: string[] }) => {
 const ProjectCardMain = ({
   isSecondary,
   image,
+  icon,
   title,
   description,
   descriptionFr,
@@ -90,7 +98,7 @@ const ProjectCardMain = ({
         <Image
           width={50}
           height={50}
-          img={require(`./assets/projects/${image}`)}
+          img={require(`./assets/projects/${icon}`)}
           className={styles.secondaryImage}
         />
         <h2 className={styles.secondaryTitle}>{title}</h2>
@@ -102,7 +110,15 @@ const ProjectCardMain = ({
     <>
       <Image class={styles.image} img={require(`./assets/projects/${image}`)} />
       <div className="card__body">
-        <h2>{title}</h2>
+        <div className={styles.secondaryBody}>
+          <Image
+            width={50}
+            height={50}
+            img={require(`./assets/projects/${icon}`)}
+            className={styles.secondaryImage}
+          />
+          <h2 className={styles.secondaryTitle}>{title}</h2>
+        </div>
         <ProjectCardTags tags={tags} />
         <p>{i18n.currentLocale === "fr" ? descriptionFr : description}</p>
       </div>
