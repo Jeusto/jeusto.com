@@ -15,26 +15,28 @@ import {
   SiVercel,
   SiC,
   SiVisualstudiocode,
+  SiRust,
 } from "react-icons/si";
 
 import styles from "./Badge.module.css";
 
 const knownTags = [
-  { name: "NextJS", colorScheme: "gray", icon: <SiVercel /> },
-  { name: "React", colorScheme: "teal", icon: <SiReact /> },
-  { name: "Sass", colorScheme: "pink", icon: <SiSass /> },
-  { name: "Php", colorScheme: "purple", icon: <SiPhp /> },
-  { name: "Sqlite", colorScheme: "gray", icon: <SiSqlite /> },
-  { name: "Typescript", colorScheme: "blue", icon: <SiTypescript /> },
-  { name: "Javascript", colorScheme: "yellow", icon: <SiJavascript /> },
-  { name: "Python", colorScheme: "yellow", icon: <SiPython /> },
-  { name: "Java", colorScheme: "red", icon: <FaJava /> },
-  { name: "MongoDB", colorScheme: "green", icon: <SiMongodb /> },
-  { name: "Flask", colorScheme: "gray", icon: <SiFlask /> },
-  { name: "C", colorScheme: "gray", icon: <SiC /> },
+  { name: "NextJS", icon: <SiVercel /> },
+  { name: "React", icon: <SiReact /> },
+  { name: "Sass", icon: <SiSass /> },
+  { name: "Php", icon: <SiPhp /> },
+  { name: "Sqlite", icon: <SiSqlite /> },
+  { name: "Typescript", icon: <SiTypescript /> },
+  { name: "Javascript", icon: <SiJavascript /> },
+  { name: "Python", icon: <SiPython /> },
+  { name: "Java", icon: <FaJava /> },
+  { name: "MongoDB", icon: <SiMongodb /> },
+  { name: "Flask", icon: <SiFlask /> },
+  { name: "C", icon: <SiC /> },
+  { name: "Rust", icon: <SiRust /> },
   {
     name: "Vscode extension",
-    colorScheme: "gray",
+
     icon: <SiVisualstudiocode />,
   },
 ];

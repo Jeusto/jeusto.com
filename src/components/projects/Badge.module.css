@@ -62,7 +62,10 @@
   background: hsla(206, 100%, 29%, 0.3);
   color: hsl(206, 98%, 24%);
 }
-
+.rust {
+  background: hsla(30, 100%, 50%, 0.3);
+  color: hsl(30, 94%, 40%);
+}
 [data-theme="dark"] .react {
   background: hsla(190, 80%, 60%, 0.3);
   color: hsl(190, 100%, 81%);
@@ -98,4 +101,8 @@
 [data-theme="dark"] .c {
   background: hsla(206, 80%, 34%, 0.3);
   color: hsl(206, 76%, 60%);
+}
+[data-theme="dark"] .rust {
+  background: hsla(30, 100%, 50%, 0.3);
+  color: hsl(30, 100%, 71%);
 }
