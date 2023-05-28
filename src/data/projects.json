@@ -11,15 +11,25 @@
     "descriptionFr": "Une extension pour l'éditeur de code Vscode qui permet de s'entraîner à améliorer sa vitesse de frappe directement dans l'éditeur. Téléchargé et utilisé régulièrement par 7000+ développeurs."
   },
   {
+    "image": "tomotask.png",
+    "icon": "tomotask-icon.png",
+    "title": "Tomotask",
+    "description": "A productivity mobile app combining a countdown and a task list to use the Pomodoro technique. (work in progress, not yet published)",
+    "repoLink": "https://github.com/Jeusto/tomotask",
+    "tags": ["React Native", "Typescript"],
+    "isSecondary": false,
+    "descriptionFr": "Une application mobile de productivité combinant un timer et une liste de tâches pour utiliser la technique Pomodoro. (en cours de développement, pas encore publiée)"
+  },
+  {
     "image": "1ptone.png",
     "icon": "1ptone-icon.png",
     "title": "1pt.one",
-    "description": "A minimalistic website to shorten website URLs and keep track of the number of visits. There's also a documented and free to use API. More than 4000 visits per month for all the shortened URLs.",
+    "description": "A minimalistic website to shorten website URLs and keep track of the number of visits. There's also a documented and free to use API. More than 2000 visits per month for all the shortened URLs.",
     "repoLink": "https://github.com/Jeusto/1pt.one",
     "demoLink": "http://1pt.one/",
     "tags": ["Python", "MongoDB", "Flask"],
     "isSecondary": false,
-    "descriptionFr": "Un site minimaliste pour raccourcir des URLs de sites web et suivre le nombre de visites. Il y a également une API documentée et gratuit d'utilisation. Plus de 4000 visites par mois pour l'ensemble des liens raccourcis."
+    "descriptionFr": "Un site minimaliste pour raccourcir des URLs de sites web et suivre le nombre de visites. Il y a également une API documentée et gratuit d'utilisation. Plus de 2000 visites par mois pour l'ensemble des liens raccourcis."
   },
   {
     "image": "candle.jpg",
@@ -36,12 +46,12 @@
     "image": "triviaten.jpeg",
     "icon": "triviaten-icon.png",
     "title": "Trivia ten",
-    "description": "A multiplayer quiz web application with rooms to play with your friends. Real-time games, with a choice of more than 20 categories of questions and over 4000 questions.",
+    "description": "A multiplayer quiz web application with rooms to play with your friends. Real-time games, 20 question categories and more than 4000 questions.",
     "repoLink": "https://github.com/Jeusto/trivia-ten",
     "demoLink": "http://triviaten.jeusto.com/",
     "tags": ["Javascript", "Socket.io", "Express"],
     "isSecondary": false,
-    "descriptionFr": "Une application web de quiz multijoueur avec des salons pour jouer avec ses amis. Parties en temps réel, avec un choix parmi plus de 20 catégories de questions et plus de 4000 questions."
+    "descriptionFr": "Une application web de quiz multijoueur avec des salons pour jouer avec ses amis. Parties en temps réel, 20 catégories de questions et plus de 4000 questions."
   },
   {
     "image": "quickjot.png",
@@ -66,13 +76,13 @@
     "descriptionFr": "Un outil CLI pour utiliser le raccourcisseur d'URL minimaliste 1pt.one depuis le terminal."
   },
   {
-    "image": "https://i.imgur.com/zpKHODQ.png",
-    "icon": "miv.png",
+    "image": "miv.png",
+    "icon": "miv-icon.png",
     "title": "Miv",
     "description": "Vim like terminal text editor written in Rust (work in progress)",
     "repoLink": "https://github.com/Jeusto/miv-text-editor",
     "tags": ["Rust"],
-    "isSecondary": true,
+    "isSecondary": false,
     "descriptionFr": "Éditeur de texte dans le terminal inspiré de Vim écrit en Rust (en cours de développement)"
   },
   {
@@ -121,12 +131,12 @@
     "image": "https://i.imgur.com/UJZtrF8.jpeg",
     "icon": "tomotasks-icon.png",
     "title": "Tomotasks",
-    "description": "A productivity web app combining a countdown and a task list to use the Pomodoro technique.",
+    "description": "Old iteration of the Tomotask mobile app in web version.",
     "repoLink": "https://github.com/Jeusto/tomotasks",
     "demoLink": "https://tomotasks.jeusto.com/",
     "tags": ["React"],
     "isSecondary": true,
-    "descriptionFr": "Une application web de productivité combinant un compte à rebours et une liste de tâches pour utiliser la technique Pomodoro."
+    "descriptionFr": "Ancienne itération de l'application mobile Tomotask en version web."
   },
   {
     "image": "https://i.imgur.com/rN9H5UC.jpeg",

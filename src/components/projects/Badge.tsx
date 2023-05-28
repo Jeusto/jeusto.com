@@ -23,6 +23,7 @@ import styles from "./Badge.module.css";
 const knownTags = [
   { name: "NextJS", icon: <SiVercel /> },
   { name: "React", icon: <SiReact /> },
+  { name: "React Native", icon: <SiReact /> },
   { name: "Sass", icon: <SiSass /> },
   { name: "Php", icon: <SiPhp /> },
   { name: "Sqlite", icon: <SiSqlite /> },
@@ -36,7 +37,6 @@ const knownTags = [
   { name: "Rust", icon: <SiRust /> },
   {
     name: "Vscode extension",
-
     icon: <SiVisualstudiocode />,
   },
 ];
@@ -51,7 +51,10 @@ export const Badge = ({ text }: { text: string }) => {
         justifyContent: "center",
         alignItems: "center",
       }}
-      className={clsx(styles.badge, tag && styles[tag.name.toLowerCase()])}
+      className={clsx(
+        styles.badge,
+        tag && styles[tag.name.toLowerCase().replace(" ", "")]
+      )}
     >
       {tag?.icon ? (
         <IconContext.Provider value={{ size: "0.9rem" }}>

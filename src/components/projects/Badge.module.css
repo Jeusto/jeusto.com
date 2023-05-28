@@ -26,7 +26,8 @@
   color: hsl(0, 0%, 95%);
 }
 
-.react {
+.react,
+.reactnative {
   background: hsla(190, 80%, 60%, 0.3);
   color: hsl(190, 81%, 21%);
 }
@@ -66,7 +67,8 @@
   background: hsla(30, 100%, 50%, 0.3);
   color: hsl(30, 94%, 40%);
 }
-[data-theme="dark"] .react {
+[data-theme="dark"] .react,
+[data-theme="dark"] .reactnative {
   background: hsla(190, 80%, 60%, 0.3);
   color: hsl(190, 100%, 81%);
 }
