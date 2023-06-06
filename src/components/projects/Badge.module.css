@@ -43,9 +43,10 @@
   background: hsla(45, 87%, 59%, 0.5);
   color: hsl(45, 78%, 23%);
 }
-.java {
-  background: hsla(359, 84%, 53%, 0.3);
-  color: rgb(145, 15, 17);
+.java,
+.angular {
+  background: hsla(0, 100%, 50%, 0.301);
+  color: rgb(63, 0, 0);
 }
 .php {
   background: hsla(236, 53%, 64%, 0.3);
@@ -58,6 +59,10 @@
 .sass {
   background: hsla(331, 47%, 59%, 0.3);
   color: rgb(110, 37, 73);
+}
+.ionic {
+  background: hsla(217, 83%, 55%, 0.3);
+  color: rgb(0, 40, 77);
 }
 .c {
   background: hsla(206, 100%, 29%, 0.3);
@@ -84,7 +89,8 @@
   background: hsla(45, 61%, 45%, 0.5);
   color: hsl(45, 89%, 82%);
 }
-[data-theme="dark"] .java {
+[data-theme="dark"] .java,
+[data-theme="dark"] .angular {
   background: hsla(359, 65%, 45%, 0.3);
   color: hsl(359, 100%, 83%);
 }
@@ -107,4 +113,8 @@
 [data-theme="dark"] .rust {
   background: hsla(30, 100%, 50%, 0.3);
   color: hsl(30, 100%, 71%);
+}
+[data-theme="dark"] .ionic {
+  background: hsla(217, 83%, 55%, 0.3);
+  color: hsl(217, 100%, 81%);
 }

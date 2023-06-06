@@ -14,11 +14,11 @@
     "image": "tomotask.png",
     "icon": "tomotask-icon.png",
     "title": "Tomotask",
-    "description": "A productivity mobile app combining a countdown and a task list to use the Pomodoro technique. (work in progress, not yet published)",
-    "repoLink": "https://github.com/Jeusto/tomotask",
+    "description": "A productivity mobile app combining a countdown and a task list to use the Pomodoro technique. Some features include: customization, sound effects and push notifications. (not yet published to app stores)",
+    "repoLink": "https://github.com/Jeusto/tomotask-react-native",
     "tags": ["React Native", "Typescript"],
     "isSecondary": false,
-    "descriptionFr": "Une application mobile de productivité combinant un timer et une liste de tâches pour utiliser la technique Pomodoro. (en cours de développement, pas encore publiée)"
+    "descriptionFr": "Une application mobile de productivité combinant un timer et une liste de tâches pour utiliser la technique Pomodoro. Certaines fonctionnalités incluent: la personnalisation, des effets sonores et des notifications push. (pas encore publié sur les app stores)"
   },
   {
     "image": "1ptone.png",
@@ -30,6 +30,17 @@
     "tags": ["Python", "MongoDB", "Flask"],
     "isSecondary": false,
     "descriptionFr": "Un site minimaliste pour raccourcir des URLs de sites web et suivre le nombre de visites. Il y a également une API documentée et gratuit d'utilisation. Plus de 2000 visites par mois pour l'ensemble des liens raccourcis."
+  },
+  {
+    "image": "minimal-hn.png",
+    "icon": "minimal-hn-icon.png",
+    "title": "Minimal HN",
+    "description": "A crossplatform minimalistic Hacker News reader that allows users to browse, search and save stories for later reading. (not yet published to app stores)",
+    "repoLink": "https://github.com/Jeusto/minimal-hn-ionic-angular",
+    "demoLink": "",
+    "tags": ["Ionic", "Angular", "Typescript", "NgRx"],
+    "isSecondary": false,
+    "descriptionFr": "Un lecteur minimaliste Hacker News multi-plateformes qui permet aux utilisateurs de parcourir, rechercher et sauvegarder des articles pour une lecture ultérieure. (pas encore publié sur les app stores)"
   },
   {
     "image": "candle.jpg",
@@ -54,17 +65,6 @@
     "descriptionFr": "Une application web de quiz multijoueur avec des salons pour jouer avec ses amis. Parties en temps réel, 20 catégories de questions et plus de 4000 questions."
   },
   {
-    "image": "quickjot.png",
-    "icon": "quickjot-icon.png",
-    "title": "QuickJot",
-    "description": "Proof of concept for an entirely client-side web app that uses the URL to store the state. Example with a text editor.",
-    "repoLink": "https://github.com/Jeusto/quickjot",
-    "demoLink": "http://quickjot.jeusto.com/",
-    "tags": ["Typescript", "Mantine", "Taptap"],
-    "isSecondary": false,
-    "descriptionFr": "Preuve de concept pour une application web entièrement côté client qui utilise l'URL pour stocker l'état. Exemple avec un éditeur de texte."
-  },
-  {
     "image": "1ptone-cli.png",
     "icon": "1ptone-cli-icon.png",
     "title": "1pt.one CLI",
@@ -74,6 +74,17 @@
     "tags": ["Typescript", "Jest", "Commander", "Chalk"],
     "isSecondary": false,
     "descriptionFr": "Un outil CLI pour utiliser le raccourcisseur d'URL minimaliste 1pt.one depuis le terminal."
+  },
+  {
+    "image": "quickjot.png",
+    "icon": "quickjot-icon.png",
+    "title": "QuickJot",
+    "description": "Proof of concept for an entirely client-side web app that uses the URL to store the state. Example with a text editor.",
+    "repoLink": "https://github.com/Jeusto/quickjot",
+    "demoLink": "http://quickjot.jeusto.com/",
+    "tags": ["Typescript", "Mantine", "Taptap"],
+    "isSecondary": false,
+    "descriptionFr": "Preuve de concept pour une application web entièrement côté client qui utilise l'URL pour stocker l'état. Exemple avec un éditeur de texte."
   },
   {
     "image": "miv.png",
