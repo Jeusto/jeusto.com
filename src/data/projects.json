@@ -14,11 +14,12 @@
     "image": "tomotask.png",
     "icon": "tomotask-icon.png",
     "title": "Tomotask",
-    "description": "A productivity mobile app combining a countdown and a task list to use the Pomodoro technique. Some features include: customization, sound effects and push notifications. (not yet published to app stores)",
+    "description": "A productivity mobile app combining a countdown and a task list to use the Pomodoro technique. Some features include: customization, sound effects and push notifications.",
     "repoLink": "https://github.com/Jeusto/tomotask-react-native",
+    "demoLink": "https://play.google.com/store/apps/details?id=com.jeusto.tomotask",
     "tags": ["React Native", "Typescript"],
     "isSecondary": false,
-    "descriptionFr": "Une application mobile de productivité combinant un timer et une liste de tâches pour utiliser la technique Pomodoro. Certaines fonctionnalités incluent: la personnalisation, des effets sonores et des notifications push. (pas encore publié sur les app stores)"
+    "descriptionFr": "Une application mobile de productivité combinant un timer et une liste de tâches pour utiliser la technique Pomodoro. Certaines fonctionnalités incluent: la personnalisation, des effets sonores et des notifications push."
   },
   {
     "image": "1ptone.png",
