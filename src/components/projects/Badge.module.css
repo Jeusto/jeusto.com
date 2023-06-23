@@ -72,6 +72,11 @@
   background: hsla(30, 100%, 50%, 0.3);
   color: hsl(30, 94%, 40%);
 }
+/* #66d1dd */
+.go {
+  background: hsla(187, 100%, 50%, 0.3);
+  color: hsl(187, 95%, 39%);
+}
 [data-theme="dark"] .react,
 [data-theme="dark"] .reactnative {
   background: hsla(190, 80%, 60%, 0.3);
@@ -117,4 +122,8 @@
 [data-theme="dark"] .ionic {
   background: hsla(217, 83%, 55%, 0.3);
   color: hsl(217, 100%, 81%);
+}
+[data-theme="dark"] .go {
+  background: hsla(187, 100%, 50%, 0.3);
+  color: hsl(187, 100%, 81%);
 }

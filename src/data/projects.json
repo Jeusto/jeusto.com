@@ -98,6 +98,27 @@
     "descriptionFr": "Éditeur de texte dans le terminal inspiré de Vim écrit en Rust (en cours de développement)"
   },
   {
+    "image": "pop-launcher.png",
+    "icon": "pop-launcher-plugins-icon.png",
+    "title": "Pop launcher plugins",
+    "description": "A collection of useful plugins for the launcher of Pop!_OS (Linux distribution)",
+    "repoLink": "https://github.com/Jeusto/pop-launcher-plugins",
+    "tags": ["Typescript", "Go", "Rust"],
+    "isSecondary": true,
+    "descriptionFr": "Une collection de plugins utiles pour le lanceur du Pop!_OS (distribution Linux)"
+  },
+  {
+    "image": "pop-launcher.png",
+    "icon": "pop-launcher-toolkit-icon.png",
+    "title": "Pop launcher toolkit",
+    "description": "A toolkit for creating Pop Launcher plugins using Typescript",
+    "repoLink": "https://github.com/Jeusto/pop-launcher-toolkit",
+    "demoLink": "https://www.npmjs.com/package/pop-launcher-toolkit",
+    "tags": ["Typescript"],
+    "isSecondary": true,
+    "descriptionFr": "Un kit d'outils pour créer des plugins Pop Launcher en utilisant Typescript"
+  },
+  {
     "image": "https://i.imgur.com/zpKHODQ.png",
     "icon": "ctron-icon.png",
     "title": "C-tron",

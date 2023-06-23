@@ -18,6 +18,7 @@ import {
   SiRust,
   SiIonic,
   SiAngular,
+  SiGo,
 } from "react-icons/si";
 
 import styles from "./Badge.module.css";
@@ -39,6 +40,7 @@ const knownTags = [
   { name: "Rust", icon: <SiRust /> },
   { name: "Ionic", icon: <SiIonic /> },
   { name: "Angular", icon: <SiAngular /> },
+  { name: "Go", icon: <SiGo /> },
   {
     name: "Vscode extension",
     icon: <SiVisualstudiocode />,
