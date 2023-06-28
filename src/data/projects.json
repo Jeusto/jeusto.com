@@ -28,7 +28,7 @@
     "description": "A minimalistic website to shorten website URLs and keep track of the number of visits. There's also a documented and free to use API. More than 2000 visits per month for all the shortened URLs.",
     "repoLink": "https://github.com/Jeusto/1pt.one",
     "demoLink": "http://1pt.one/",
-    "tags": ["Python", "MongoDB", "Flask"],
+    "tags": ["Go", "Python", "MongoDB", "Flask"],
     "isSecondary": false,
     "descriptionFr": "Un site minimaliste pour raccourcir des URLs de sites web et suivre le nombre de visites. Il y a également une API documentée et gratuit d'utilisation. Plus de 2000 visites par mois pour l'ensemble des liens raccourcis."
   },
