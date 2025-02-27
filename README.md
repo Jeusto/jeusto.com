@@ -1,5 +1,5 @@
 # Personal website
 
-My personal website which serves as a portfolio and a blog. Built with Docusaurus and React.js.
+My personal website which also serves as a portfolio and blog.
 
 Visit here: https://www.jeusto.com/

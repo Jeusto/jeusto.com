@@ -1,0 +1,40 @@
+import { ArticleLayout } from '@/components/blog/ArticleLayout'
+import { Admonition } from '@/components/blog/Admonition'
+import Image from 'next/image'
+
+export const meta = {
+  date: '2023-09-03',
+  tags: ['til', 'programming'],
+  title: 'Snippet #1 - Makefile with builtin documentation/help',
+  description: '',
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+<Admonition type="tip"> This is a snippet, not a full article. </Admonition>
+
+```bash
+help::
+	@printf "%s\n" "Available targets:"
+	@grep -E '^[a-zA-Z0-9_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m  make %-15s\033[0m %s\n", $$1, $$2}'
+
+db-reset:: ## Reset the database
+	docker-compose exec web flask db reset --with-testdb
+
+routes:: ## List available routes
+	docker-compose exec web flask routes
+
+flask:: ## Execute Flask command
+	docker-compose exec web flask $(ARGS)
+
+```
+
+When we call `make help` we get:
+
+```
+❱ make help
+Available targets:
+  make db-reset        Reset the database
+  make routes          List available routes
+  make flask           Execute Flask command
+```
