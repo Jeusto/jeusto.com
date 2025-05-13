@@ -39,7 +39,7 @@ const descriptionLines = [
   translate({
     id: "home.description.line3",
     message:
-      "If you're interested, you can take a look at some of my projects or read my blog. If you have a question, or want to collaborate, feel free to email me or contact me through one of the links below.",
+      "If you're interested, you can take a look at some of my projects. If you have a question, or want to collaborate, feel free to email me or contact me through one of the links below.",
   }),
 ];
 
