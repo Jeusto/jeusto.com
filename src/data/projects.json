@@ -78,7 +78,7 @@
     "title": "Trivia ten",
     "description": "A multiplayer quiz web application with rooms to play with your friends. Real-time games, 20 question categories and more than 4000 questions.",
     "repoLink": "https://github.com/Jeusto/trivia-ten",
-    "demoLink": "http://triviaten.arhun.fr/",
+    "demoLink": "http://trivia.arhun.fr/",
     "tags": [
       "Javascript",
       "Socket.io",

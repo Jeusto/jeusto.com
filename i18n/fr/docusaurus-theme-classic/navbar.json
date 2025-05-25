@@ -1,8 +1,4 @@
 {
-  "title": {
-    "message": "Jeusto",
-    "description": "The title in the navbar"
-  },
   "item.label.Projects": {
     "message": "Projets",
     "description": "Navbar item with label Projects"

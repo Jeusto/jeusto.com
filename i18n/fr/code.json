@@ -310,7 +310,7 @@
     "message": "Site web"
   },
   "home.description.line1": {
-    "message": "Je suis proche d'un ordinateur depuis mon plus jeune âge et j'en suis passionné depuis. Je suis actuellement un Master d'Ingénierie Informatique en alternance, travaillant parallèlement comme développeur spécialisé dans les applications web et mobiles."
+    "message": "Je suis proche d'un ordinateur depuis mon plus jeune âge et j'en suis passionné depuis. Actuellement en Master d'Ingénierie Informatique en alternance, je travaille parallèlement en tant que développeur spécialisé dans les applications web et mobiles."
   },
   "home.description.line2": {
     "message": "Je fais de la programmation dans divers langages et technologies, notamment Typescript, C#, Go, Angular, React, et bien plus encore. Passionné par le développement logiciel et la résolution de problèmes, je prends plaisir à concevoir des produits, interfaces et interactions qui offrent une expérience agréable."
@@ -332,5 +332,8 @@
   },
   "home.projects.view-all": {
     "message": "Voir tous les projets"
+  },
+  "home.linkedin.url": {
+    "message": "https://www.linkedin.com/in/asaday/?locale=fr_FR"
   }
 }

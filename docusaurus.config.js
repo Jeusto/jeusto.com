@@ -72,6 +72,7 @@ const config = {
           srcDark: "img/logo-white.svg",
           height: "45px",
           width: "45px",
+          className: "navbar__logo",
         },
         items: [
           { to: "/projects", label: "Projects", position: "left" },

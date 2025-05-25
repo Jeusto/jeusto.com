@@ -48,6 +48,11 @@ const projectsButtonText = translate({
   id: "home.projects.view-all",
 });
 
+const linkedinUrl = translate({
+  message: "https://www.linkedin.com/in/asaday/",
+  id: "home.linkedin.url",
+});
+
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
 
@@ -63,7 +68,7 @@ export default function Home() {
     },
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/asaday/",
+      url: linkedinUrl,
       icon: <BsLinkedin />,
     },
     { name: "GitHub", url: "https://github.com/Jeusto", icon: <BsGithub /> },
