@@ -11,6 +11,10 @@ const config = {
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
 
+  customFields: {
+    name: process.env.NAME || "Jeusto",
+  },
+
   i18n: {
     defaultLocale: "en",
     locales: ["en", "fr"],
