@@ -3,9 +3,9 @@
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Jeusto - Arhun Saday",
-  tagline: "Full stack developer & computer science student.",
-  url: "https://jeusto.com",
+  title: process.env.NAME === "Arhun" ? "Arhun Saday" : "Jeusto",
+  tagline: "Software Engineer",
+  url: process.env.NAME === "Arhun" ? "https://arhun.fr" : "https://jeusto.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -65,7 +65,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: "Jeusto",
+        title: process.env.NAME === "Arhun" ? "Arhun Saday" : "Jeusto",
         logo: {
           alt: "Site logo",
           src: "img/logo.svg",
@@ -75,7 +75,6 @@ const config = {
         },
         items: [
           { to: "/projects", label: "Projects", position: "left" },
-          { to: "/blog", label: "Blog", position: "left" },
           {
             type: "localeDropdown",
             position: "right",
@@ -89,8 +88,16 @@ const config = {
             title: "Connect",
             items: [
               {
-                label: "Email: arhunsad@gmail.com",
-                href: "mailto:arhunsad@gmail.com",
+                label:
+                  "Email: " +
+                  (process.env.NAME === "Arhun"
+                    ? "contact@arhun.fr"
+                    : "contact@jeusto.com"),
+                href:
+                  "mailto:" +
+                  (process.env.NAME === "Arhun"
+                    ? "contact@arhun.fr"
+                    : "contact@jeusto.com"),
               },
 
               {
@@ -104,40 +111,6 @@ const config = {
               {
                 label: "Twitter @Jeustoo",
                 href: "https://twitter.com/Jeustoo",
-              },
-            ],
-          },
-          {
-            title: "Discover",
-            items: [
-              {
-                label: "About me",
-                to: "/",
-              },
-              {
-                label: "Projects",
-                to: "/projects",
-              },
-              {
-                label: "Blog",
-                to: "/blog",
-              },
-            ],
-          },
-          {
-            title: "Blog feed",
-            items: [
-              {
-                label: "RSS",
-                to: "/blog/rss.xml",
-              },
-              {
-                label: "Atom",
-                to: "/blog/atom.xml",
-              },
-              {
-                label: "Json",
-                to: "/blog/feed.json",
               },
             ],
           },

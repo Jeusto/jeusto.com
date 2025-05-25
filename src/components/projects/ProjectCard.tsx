@@ -64,7 +64,7 @@ export const ProjectCard = ({
               link={repoLink}
               linkType="repository"
               icon={<FiGithub size="20" />}
-              text="Repository"
+              text="Source code"
             />
           )}
         </div>
@@ -108,7 +108,10 @@ const ProjectCardMain = ({
     </div>
   ) : (
     <>
-      <Image class={styles.image} img={require(`./assets/projects/${image}`)} />
+      <Image
+        className={styles.image}
+        img={require(`./assets/projects/${image}`)}
+      />
       <div className="card__body">
         <div className={styles.secondaryBody}>
           <Image

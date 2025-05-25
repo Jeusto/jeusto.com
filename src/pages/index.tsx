@@ -14,27 +14,16 @@ import { ProjectList } from "../components/projects/ProjectList";
 import projects from "../data/projects.json";
 import avatar from "./assets/index/avatar.png";
 
-const links = [
-  { name: "GitHub", url: "https://github.com/Jeusto", icon: <BsGithub /> },
-  { name: "Twitter", url: "https://twitter.com/Jeustoo", icon: <BsTwitter /> },
-  { name: "Email", url: "mailto:arhunsad@gmail.com", icon: <SiGmail /> },
-  {
-    name: "LinkedIn",
-    url: "https://www.linkedin.com/in/asaday/",
-    icon: <BsLinkedin />,
-  },
-];
-
 const descriptionLines = [
   translate({
     id: "home.description.line1",
     message:
-      "I've been close to a computer since an early age and been passionate about it ever since. I'm currently studying computer science at the University of Strasbourg in France. In addition to my studies I am also a freelance full stack developer.",
+      "I've been close to a computer since an early age and been passionate about it ever since. I'm currently pursuing a Master's degree in Software Engineering through a work-study program while working as a software developer specializing in web and mobile development.",
   }),
   translate({
     id: "home.description.line2",
     message:
-      "I do programming in various languages and technologies including Typescript, React.js, Python and much more. I'm passionate about software development, problem solving and I especially love creating all sorts of delightful products, interfaces, and interactions.",
+      "I do programming in various languages and technologies including Typescript, C#, Go, Angular, React and much more. I'm passionate about software development, problem solving and I especially love creating all sorts of delightful products, interfaces, and interactions.",
   }),
   translate({
     id: "home.description.line3",
@@ -61,6 +50,29 @@ const projectsButtonText = translate({
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
+
+  const links = [
+    {
+      name: "Email",
+      url:
+        "mailto:" +
+        (siteConfig.customFields.name === "Arhun"
+          ? "contact@arhun.fr"
+          : "contact@jeusto.com"),
+      icon: <SiGmail />,
+    },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/asaday/",
+      icon: <BsLinkedin />,
+    },
+    { name: "GitHub", url: "https://github.com/Jeusto", icon: <BsGithub /> },
+    {
+      name: "Twitter",
+      url: "https://twitter.com/Jeustoo",
+      icon: <BsTwitter />,
+    },
+  ];
 
   return (
     <Layout title="Home" description={siteConfig.tagline}>

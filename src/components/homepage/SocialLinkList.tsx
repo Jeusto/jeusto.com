@@ -40,7 +40,7 @@ export const SocialLinkList = ({ links }: SocialLinkListProps) => {
       </h2>
       <div className={clsx("row", styles.socialLinks)}>
         {links.map((link) => (
-          <SocialLink {...link} />
+          <SocialLink {...link} key={link.name} />
         ))}
       </div>
     </div>

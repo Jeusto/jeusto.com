@@ -283,10 +283,10 @@
     "description": "The title of the tag list page"
   },
   "hero.greetings": {
-    "message": "Salut. Je suis"
+    "message": "Salut, je suis"
   },
   "hero.subtitle1": {
-    "message": "Développeur full stack freelance."
+    "message": "Un ingénieur logiciel passionné qui construit les solutions de demain."
   },
   "hero.subtitle2": {
     "message": "Actuellement etudiant en informatique à l'Université de Strasbourg."
@@ -304,19 +304,19 @@
     "message": "Quelques liens"
   },
   "repository-button.text": {
-    "message": "Répertoire"
+    "message": "Code source"
   },
   "demo-button.text": {
     "message": "Site web"
   },
   "home.description.line1": {
-    "message": "Je suis proche d'un ordinateur depuis mon plus jeune âge et j'en suis passionné depuis. J'étudie actuellement l'informatique à l'Université de Strasbourg. En plus de mes études, je suis également un développeur full stack en freelance."
+    "message": "Je suis proche d'un ordinateur depuis mon plus jeune âge et j'en suis passionné depuis. Je suis actuellement un Master d'Ingénierie Informatique en alternance, travaillant parallèlement comme développeur spécialisé dans les applications web et mobiles."
   },
   "home.description.line2": {
-    "message": "Je fais de la programmation dans divers langages et technologies, notamment Typescript, React.js, Python et bien plus encore. Je suis passionné par le développement de logiciels, la résolution de problèmes et j'aime particulièrement créer toutes sortes de produits, d'interfaces et d'interactions agréables."
+    "message": "Je fais de la programmation dans divers langages et technologies, notamment Typescript, C#, Go, Angular, React, et bien plus encore. Passionné par le développement logiciel et la résolution de problèmes, je prends plaisir à concevoir des produits, interfaces et interactions qui offrent une expérience agréable."
   },
   "home.description.line3": {
-    "message": "Si vous êtes intéressé, vous pouvez jeter un coup d'œil à certains de mes projets ou lire mon blog (en anglais). Si vous avez une question ou que vous voulez collaborer, n'hésitez pas à m'envoyer un mail ou à me contacter via l'un des liens ci-dessous."
+    "message": "Si vous êtes intéressé, vous pouvez jeter un coup d'œil à certains de mes projets. Si vous avez une question ou que vous voulez collaborer, n'hésitez pas à m'envoyer un mail ou à me contacter via l'un des liens ci-dessous."
   },
   "home.projects.heading": {
     "message": "Une sélection de projets personnels"
